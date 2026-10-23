@@ -1,0 +1,14 @@
+.venv/bin/ruff check src tests scripts
+All checks passed!
+.venv/bin/ruff format --check src tests scripts
+13 files already formatted
+npm --prefix apps/web run lint
+
+> lean-field-notes@0.1.0 lint
+> tsc --noEmit && prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+apps/web/node_modules/.bin/prettier --check sdk/typescript
+Checking formatting...
+All matched files use Prettier code style!

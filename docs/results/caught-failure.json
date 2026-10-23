@@ -1,0 +1,9 @@
+{
+  "dedupe_changes_majority": {
+    "before": true,
+    "after": false
+  },
+  "truncate_loses_tail_assertion": true,
+  "summary_loses_untagged_contract": true,
+  "basis": "deterministic semantic controls, NOT observed model regressions"
+}

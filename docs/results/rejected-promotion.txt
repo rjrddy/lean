@@ -1,0 +1,3 @@
+$ .venv/bin/python scripts/gate.py
+{"promote": false, "policy": "summary", "minimum_success": 0.8, "reasons": ["observed success below configured minimum", "realized dollar savings not measured"], "basis": "configured evidence gate, not statistical proof"}
+exit_code=1

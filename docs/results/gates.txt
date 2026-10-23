@@ -1,0 +1,19 @@
+.venv/bin/ruff check src tests scripts
+All checks passed!
+.venv/bin/ruff format --check src tests scripts
+12 files already formatted
+npm --prefix apps/web run lint
+
+> lean-field-notes@0.1.0 lint
+> tsc --noEmit && prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+apps/web/node_modules/.bin/prettier --check sdk/typescript
+Checking formatting...
+All matched files use Prettier code style!
+.venv/bin/python -m pytest -q
+...........                                                              [100%]
+11 passed in 1.80s
+.venv/bin/python scripts/bench.py
+{"semantic_controls": {"dedupe_changes_majority": {"before": true, "after": false}, "truncate_loses_tail_assertion": true, "summary_loses_untagged_contract": true, "basis": "deterministic semantic controls, NOT observed model regressions"}, "cache": {"requests": 100, "tool_invocations": 1, "cache_hits": 99}, "archive_prompts_recounted": 144}

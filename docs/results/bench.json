@@ -1,0 +1,1582 @@
+{
+  "scope": "real BPE transform cost; no model inference in this short bench",
+  "environment": {
+    "python": "3.13.2",
+    "platform": "macOS-15.2-arm64-arm-64bit-Mach-O"
+  },
+  "samples": {
+    "baseline": {
+      "p50_us": 1734.6875,
+      "samples_us": [
+        2893.75,
+        1643.833,
+        1603.416,
+        1580.916,
+        1575.792,
+        1570.25,
+        1984.791,
+        1829.25,
+        1731.542,
+        1742.584,
+        1698.292,
+        1887.625,
+        1823.625,
+        1667.166,
+        1742.292,
+        1674.25,
+        1720.833,
+        2072.625,
+        1661.292,
+        1585.667,
+        1652.042,
+        1600.459,
+        1605.333,
+        1777.458,
+        1810.792,
+        1920.417,
+        1948.917,
+        1831.125,
+        1803.292,
+        1793.458,
+        1785.0,
+        1689.417,
+        1603.083,
+        1632.75,
+        1604.75,
+        1847.792,
+        1709.5,
+        1704.958,
+        1630.375,
+        1630.791,
+        1791.584,
+        1840.667,
+        1731.542,
+        1682.5,
+        1904.958,
+        1795.292,
+        1867.166,
+        1811.375,
+        1737.042,
+        1740.583,
+        1750.875,
+        1772.209,
+        1865.583,
+        1812.584,
+        1908.333,
+        1694.25,
+        1711.625,
+        1663.125,
+        1976.666,
+        1797.0,
+        1695.125,
+        1674.417,
+        1706.125,
+        1691.458,
+        1879.875,
+        1765.875,
+        1711.291,
+        1670.375,
+        1700.875,
+        1689.958,
+        1799.333,
+        1771.25,
+        1842.042,
+        1924.708,
+        1691.125,
+        1699.458,
+        1967.083,
+        1758.0,
+        1712.375,
+        1726.459,
+        1717.084,
+        1771.375,
+        1911.25,
+        2102.5,
+        1797.625,
+        1711.917,
+        1682.417,
+        1732.333,
+        1826.708,
+        1690.666,
+        1697.625,
+        1768.917,
+        1919.166,
+        1841.666,
+        1820.125,
+        1644.5,
+        1660.958,
+        1680.458,
+        1677.208,
+        1832.084
+      ],
+      "before_tokens": 457,
+      "after_tokens": 457
+    },
+    "dedupe": {
+      "p50_us": 858.771,
+      "samples_us": [
+        897.708,
+        883.125,
+        933.75,
+        983.666,
+        863.708,
+        906.25,
+        858.375,
+        879.417,
+        829.042,
+        835.333,
+        845.792,
+        855.25,
+        821.125,
+        852.041,
+        861.75,
+        865.666,
+        843.042,
+        835.541,
+        833.875,
+        838.375,
+        889.375,
+        968.375,
+        1011.042,
+        896.0,
+        871.125,
+        846.083,
+        868.917,
+        839.042,
+        832.042,
+        834.917,
+        852.209,
+        823.333,
+        823.542,
+        992.458,
+        833.416,
+        829.875,
+        951.833,
+        876.875,
+        823.542,
+        824.042,
+        950.958,
+        991.167,
+        862.708,
+        873.917,
+        1038.166,
+        916.25,
+        861.292,
+        861.708,
+        859.334,
+        854.875,
+        860.541,
+        862.958,
+        857.209,
+        869.875,
+        856.959,
+        892.583,
+        924.25,
+        856.458,
+        901.041,
+        824.75,
+        927.458,
+        900.25,
+        933.25,
+        830.208,
+        856.375,
+        863.208,
+        872.708,
+        1005.709,
+        960.459,
+        858.083,
+        830.083,
+        822.25,
+        806.333,
+        828.208,
+        841.042,
+        843.167,
+        843.083,
+        835.25,
+        931.959,
+        910.708,
+        853.458,
+        830.375,
+        905.041,
+        847.25,
+        855.334,
+        824.625,
+        858.833,
+        823.167,
+        844.959,
+        815.875,
+        935.541,
+        868.792,
+        960.125,
+        829.792,
+        868.458,
+        840.083,
+        825.667,
+        1052.084,
+        866.542,
+        858.709
+      ],
+      "before_tokens": 457,
+      "after_tokens": 106
+    },
+    "summary": {
+      "p50_us": 819.271,
+      "samples_us": [
+        1144.75,
+        979.458,
+        899.75,
+        786.958,
+        796.666,
+        798.917,
+        801.958,
+        785.792,
+        780.417,
+        794.5,
+        777.958,
+        781.041,
+        791.75,
+        860.0,
+        873.458,
+        882.75,
+        871.375,
+        793.958,
+        1017.542,
+        870.5,
+        813.791,
+        853.709,
+        816.833,
+        842.833,
+        806.417,
+        905.75,
+        979.0,
+        853.334,
+        786.375,
+        792.375,
+        777.166,
+        775.916,
+        769.0,
+        801.75,
+        853.541,
+        839.0,
+        817.042,
+        931.291,
+        933.916,
+        814.583,
+        836.542,
+        832.958,
+        1109.292,
+        837.084,
+        978.416,
+        835.417,
+        815.375,
+        842.0,
+        869.25,
+        871.25,
+        830.875,
+        802.584,
+        797.375,
+        833.292,
+        819.167,
+        814.334,
+        902.833,
+        921.833,
+        872.0,
+        843.459,
+        945.916,
+        971.167,
+        871.667,
+        814.166,
+        817.333,
+        817.625,
+        786.458,
+        792.5,
+        781.333,
+        782.875,
+        782.041,
+        778.666,
+        828.833,
+        911.375,
+        819.375,
+        866.792,
+        805.208,
+        902.625,
+        954.709,
+        850.25,
+        793.0,
+        851.542,
+        794.292,
+        802.667,
+        887.417,
+        923.542,
+        793.959,
+        776.708,
+        833.875,
+        759.875,
+        784.208,
+        788.625,
+        776.875,
+        807.375,
+        778.5,
+        825.958,
+        910.625,
+        814.125,
+        838.333,
+        801.708
+      ],
+      "before_tokens": 457,
+      "after_tokens": 88
+    },
+    "trim256": {
+      "p50_us": 2216.5209999999997,
+      "samples_us": [
+        2207.875,
+        2112.667,
+        2106.666,
+        2305.667,
+        2216.875,
+        2224.959,
+        2469.125,
+        2353.75,
+        2325.417,
+        2152.292,
+        2102.709,
+        2189.834,
+        2269.875,
+        2416.209,
+        2305.333,
+        2194.375,
+        2249.417,
+        2157.25,
+        2050.834,
+        2101.459,
+        2103.291,
+        2242.792,
+        2221.916,
+        2204.625,
+        2203.334,
+        2167.875,
+        2415.833,
+        2191.541,
+        2217.292,
+        2424.875,
+        2366.75,
+        2156.542,
+        2142.208,
+        2145.75,
+        2172.333,
+        2323.083,
+        2270.125,
+        2196.167,
+        2155.542,
+        2242.333,
+        2118.125,
+        2081.416,
+        2042.25,
+        2185.0,
+        2299.083,
+        2222.166,
+        2121.0,
+        2124.5,
+        2184.917,
+        2118.458,
+        2125.0,
+        2522.208,
+        2266.875,
+        2316.666,
+        2221.541,
+        2175.584,
+        2191.583,
+        2272.875,
+        2216.167,
+        2434.708,
+        2302.583,
+        2205.667,
+        2219.458,
+        2158.083,
+        2139.0,
+        2173.042,
+        2218.167,
+        2555.75,
+        2220.125,
+        2235.125,
+        2198.916,
+        2161.375,
+        2188.042,
+        2303.916,
+        2579.333,
+        2248.583,
+        2303.166,
+        2139.167,
+        2083.125,
+        2036.875,
+        2388.709,
+        2285.708,
+        2242.667,
+        2225.25,
+        2259.916,
+        2356.875,
+        2126.75,
+        2180.459,
+        2208.083,
+        2484.208,
+        2442.666,
+        2132.084,
+        2094.875,
+        2142.417,
+        2199.625,
+        2233.125,
+        2315.375,
+        2252.125,
+        2221.875,
+        2371.541
+      ],
+      "before_tokens": 457,
+      "after_tokens": 254
+    },
+    "trim64": {
+      "p50_us": 1433.5205,
+      "samples_us": [
+        1480.084,
+        1433.75,
+        1406.541,
+        1424.292,
+        1404.709,
+        1604.084,
+        1552.833,
+        1438.708,
+        1446.125,
+        1406.791,
+        1397.5,
+        1380.25,
+        1430.125,
+        1561.959,
+        1576.459,
+        1402.125,
+        1427.417,
+        1545.75,
+        1444.084,
+        1424.791,
+        1405.166,
+        1422.709,
+        1415.75,
+        1411.708,
+        1434.125,
+        1416.75,
+        1548.5,
+        1573.25,
+        1781.417,
+        1485.458,
+        1405.708,
+        1401.584,
+        1395.166,
+        1465.167,
+        1331.292,
+        1319.791,
+        1339.417,
+        1376.584,
+        1366.166,
+        1747.166,
+        1667.833,
+        1508.625,
+        1464.542,
+        1431.291,
+        1438.542,
+        1456.5,
+        1399.75,
+        1566.417,
+        1642.334,
+        1524.208,
+        1503.958,
+        1437.334,
+        1438.125,
+        1495.042,
+        1487.542,
+        1433.291,
+        1356.833,
+        1383.375,
+        1357.791,
+        1370.25,
+        1428.833,
+        1343.375,
+        1513.291,
+        1529.75,
+        1475.292,
+        1421.125,
+        1416.708,
+        1393.833,
+        1394.792,
+        1525.917,
+        1528.25,
+        1470.833,
+        1427.041,
+        1511.292,
+        1533.125,
+        1426.417,
+        1489.083,
+        1431.709,
+        1419.583,
+        1423.792,
+        1427.958,
+        1438.917,
+        1420.458,
+        1481.959,
+        1358.75,
+        1478.417,
+        1485.583,
+        1423.375,
+        1458.833,
+        1444.75,
+        1517.583,
+        1428.166,
+        1463.167,
+        1356.166,
+        1359.625,
+        1366.375,
+        1505.833,
+        1668.125,
+        1373.667,
+        1460.875
+      ],
+      "before_tokens": 457,
+      "after_tokens": 62
+    },
+    "balanced": {
+      "p50_us": 838.375,
+      "samples_us": [
+        807.5,
+        783.041,
+        833.042,
+        1016.084,
+        869.125,
+        840.0,
+        843.375,
+        972.375,
+        864.625,
+        852.541,
+        848.583,
+        868.25,
+        979.708,
+        810.25,
+        848.958,
+        1016.417,
+        864.583,
+        923.583,
+        826.167,
+        830.667,
+        792.709,
+        819.958,
+        785.917,
+        794.0,
+        1031.708,
+        840.792,
+        842.417,
+        836.166,
+        856.459,
+        839.375,
+        814.792,
+        833.709,
+        1268.958,
+        868.708,
+        835.25,
+        861.584,
+        865.75,
+        860.209,
+        845.125,
+        830.5,
+        833.666,
+        841.834,
+        845.542,
+        862.583,
+        826.625,
+        833.5,
+        850.541,
+        973.834,
+        920.75,
+        820.5,
+        960.125,
+        828.375,
+        955.167,
+        847.667,
+        826.167,
+        823.791,
+        831.25,
+        863.708,
+        817.125,
+        872.375,
+        882.958,
+        854.583,
+        874.333,
+        833.334,
+        797.666,
+        806.709,
+        804.792,
+        796.125,
+        802.833,
+        790.625,
+        800.208,
+        875.917,
+        837.375,
+        838.625,
+        834.708,
+        832.833,
+        838.125,
+        807.792,
+        828.25,
+        819.833,
+        800.125,
+        789.334,
+        819.125,
+        1093.333,
+        848.292,
+        885.625,
+        824.791,
+        853.0,
+        814.375,
+        828.083,
+        821.75,
+        828.166,
+        968.125,
+        831.083,
+        885.917,
+        919.708,
+        871.209,
+        897.25,
+        798.917,
+        773.625
+      ],
+      "before_tokens": 457,
+      "after_tokens": 88
+    }
+  },
+  "semantic_controls": {
+    "dedupe_changes_majority": {
+      "before": true,
+      "after": false
+    },
+    "truncate_loses_tail_assertion": true,
+    "summary_loses_untagged_contract": true,
+    "basis": "deterministic semantic controls, NOT observed model regressions"
+  },
+  "cache": {
+    "requests": 100,
+    "tool_invocations": 1,
+    "cache_hits": 99
+  },
+  "archive_recount": [
+    {
+      "seed": 7301,
+      "task": "empty-mean",
+      "policy": "balanced",
+      "recounted_input_tokens": 303
+    },
+    {
+      "seed": 7301,
+      "task": "empty-mean",
+      "policy": "baseline",
+      "recounted_input_tokens": 1027
+    },
+    {
+      "seed": 7301,
+      "task": "empty-mean",
+      "policy": "trim256",
+      "recounted_input_tokens": 621
+    },
+    {
+      "seed": 7301,
+      "task": "empty-mean",
+      "policy": "dedupe",
+      "recounted_input_tokens": 325
+    },
+    {
+      "seed": 7301,
+      "task": "empty-mean",
+      "policy": "trim64",
+      "recounted_input_tokens": 237
+    },
+    {
+      "seed": 7301,
+      "task": "empty-mean",
+      "policy": "summary",
+      "recounted_input_tokens": 289
+    },
+    {
+      "seed": 7301,
+      "task": "stable-unique",
+      "policy": "balanced",
+      "recounted_input_tokens": 279
+    },
+    {
+      "seed": 7301,
+      "task": "stable-unique",
+      "policy": "baseline",
+      "recounted_input_tokens": 1003
+    },
+    {
+      "seed": 7301,
+      "task": "stable-unique",
+      "policy": "trim256",
+      "recounted_input_tokens": 611
+    },
+    {
+      "seed": 7301,
+      "task": "stable-unique",
+      "policy": "dedupe",
+      "recounted_input_tokens": 301
+    },
+    {
+      "seed": 7301,
+      "task": "stable-unique",
+      "policy": "trim64",
+      "recounted_input_tokens": 227
+    },
+    {
+      "seed": 7301,
+      "task": "stable-unique",
+      "policy": "summary",
+      "recounted_input_tokens": 265
+    },
+    {
+      "seed": 7301,
+      "task": "inclusive-range",
+      "policy": "balanced",
+      "recounted_input_tokens": 306
+    },
+    {
+      "seed": 7301,
+      "task": "inclusive-range",
+      "policy": "baseline",
+      "recounted_input_tokens": 1030
+    },
+    {
+      "seed": 7301,
+      "task": "inclusive-range",
+      "policy": "trim256",
+      "recounted_input_tokens": 628
+    },
+    {
+      "seed": 7301,
+      "task": "inclusive-range",
+      "policy": "dedupe",
+      "recounted_input_tokens": 328
+    },
+    {
+      "seed": 7301,
+      "task": "inclusive-range",
+      "policy": "trim64",
+      "recounted_input_tokens": 244
+    },
+    {
+      "seed": 7301,
+      "task": "inclusive-range",
+      "policy": "summary",
+      "recounted_input_tokens": 292
+    },
+    {
+      "seed": 7301,
+      "task": "slug-spaces",
+      "policy": "balanced",
+      "recounted_input_tokens": 315
+    },
+    {
+      "seed": 7301,
+      "task": "slug-spaces",
+      "policy": "baseline",
+      "recounted_input_tokens": 1039
+    },
+    {
+      "seed": 7301,
+      "task": "slug-spaces",
+      "policy": "trim256",
+      "recounted_input_tokens": 617
+    },
+    {
+      "seed": 7301,
+      "task": "slug-spaces",
+      "policy": "dedupe",
+      "recounted_input_tokens": 337
+    },
+    {
+      "seed": 7301,
+      "task": "slug-spaces",
+      "policy": "trim64",
+      "recounted_input_tokens": 233
+    },
+    {
+      "seed": 7301,
+      "task": "slug-spaces",
+      "policy": "summary",
+      "recounted_input_tokens": 301
+    },
+    {
+      "seed": 7301,
+      "task": "zero-divisor",
+      "policy": "balanced",
+      "recounted_input_tokens": 290
+    },
+    {
+      "seed": 7301,
+      "task": "zero-divisor",
+      "policy": "baseline",
+      "recounted_input_tokens": 1014
+    },
+    {
+      "seed": 7301,
+      "task": "zero-divisor",
+      "policy": "trim256",
+      "recounted_input_tokens": 624
+    },
+    {
+      "seed": 7301,
+      "task": "zero-divisor",
+      "policy": "dedupe",
+      "recounted_input_tokens": 312
+    },
+    {
+      "seed": 7301,
+      "task": "zero-divisor",
+      "policy": "trim64",
+      "recounted_input_tokens": 240
+    },
+    {
+      "seed": 7301,
+      "task": "zero-divisor",
+      "policy": "summary",
+      "recounted_input_tokens": 276
+    },
+    {
+      "seed": 7301,
+      "task": "clamp-negative",
+      "policy": "balanced",
+      "recounted_input_tokens": 304
+    },
+    {
+      "seed": 7301,
+      "task": "clamp-negative",
+      "policy": "baseline",
+      "recounted_input_tokens": 1028
+    },
+    {
+      "seed": 7301,
+      "task": "clamp-negative",
+      "policy": "trim256",
+      "recounted_input_tokens": 618
+    },
+    {
+      "seed": 7301,
+      "task": "clamp-negative",
+      "policy": "dedupe",
+      "recounted_input_tokens": 326
+    },
+    {
+      "seed": 7301,
+      "task": "clamp-negative",
+      "policy": "trim64",
+      "recounted_input_tokens": 234
+    },
+    {
+      "seed": 7301,
+      "task": "clamp-negative",
+      "policy": "summary",
+      "recounted_input_tokens": 290
+    },
+    {
+      "seed": 7301,
+      "task": "case-insensitive",
+      "policy": "balanced",
+      "recounted_input_tokens": 299
+    },
+    {
+      "seed": 7301,
+      "task": "case-insensitive",
+      "policy": "baseline",
+      "recounted_input_tokens": 1023
+    },
+    {
+      "seed": 7301,
+      "task": "case-insensitive",
+      "policy": "trim256",
+      "recounted_input_tokens": 623
+    },
+    {
+      "seed": 7301,
+      "task": "case-insensitive",
+      "policy": "dedupe",
+      "recounted_input_tokens": 321
+    },
+    {
+      "seed": 7301,
+      "task": "case-insensitive",
+      "policy": "trim64",
+      "recounted_input_tokens": 239
+    },
+    {
+      "seed": 7301,
+      "task": "case-insensitive",
+      "policy": "summary",
+      "recounted_input_tokens": 285
+    },
+    {
+      "seed": 7301,
+      "task": "missing-value",
+      "policy": "balanced",
+      "recounted_input_tokens": 311
+    },
+    {
+      "seed": 7301,
+      "task": "missing-value",
+      "policy": "baseline",
+      "recounted_input_tokens": 1035
+    },
+    {
+      "seed": 7301,
+      "task": "missing-value",
+      "policy": "trim256",
+      "recounted_input_tokens": 623
+    },
+    {
+      "seed": 7301,
+      "task": "missing-value",
+      "policy": "dedupe",
+      "recounted_input_tokens": 333
+    },
+    {
+      "seed": 7301,
+      "task": "missing-value",
+      "policy": "trim64",
+      "recounted_input_tokens": 239
+    },
+    {
+      "seed": 7301,
+      "task": "missing-value",
+      "policy": "summary",
+      "recounted_input_tokens": 297
+    },
+    {
+      "seed": 7302,
+      "task": "empty-mean",
+      "policy": "trim256",
+      "recounted_input_tokens": 621
+    },
+    {
+      "seed": 7302,
+      "task": "empty-mean",
+      "policy": "dedupe",
+      "recounted_input_tokens": 325
+    },
+    {
+      "seed": 7302,
+      "task": "empty-mean",
+      "policy": "summary",
+      "recounted_input_tokens": 289
+    },
+    {
+      "seed": 7302,
+      "task": "empty-mean",
+      "policy": "trim64",
+      "recounted_input_tokens": 237
+    },
+    {
+      "seed": 7302,
+      "task": "empty-mean",
+      "policy": "baseline",
+      "recounted_input_tokens": 1027
+    },
+    {
+      "seed": 7302,
+      "task": "empty-mean",
+      "policy": "balanced",
+      "recounted_input_tokens": 303
+    },
+    {
+      "seed": 7302,
+      "task": "stable-unique",
+      "policy": "trim256",
+      "recounted_input_tokens": 611
+    },
+    {
+      "seed": 7302,
+      "task": "stable-unique",
+      "policy": "dedupe",
+      "recounted_input_tokens": 301
+    },
+    {
+      "seed": 7302,
+      "task": "stable-unique",
+      "policy": "summary",
+      "recounted_input_tokens": 265
+    },
+    {
+      "seed": 7302,
+      "task": "stable-unique",
+      "policy": "trim64",
+      "recounted_input_tokens": 227
+    },
+    {
+      "seed": 7302,
+      "task": "stable-unique",
+      "policy": "baseline",
+      "recounted_input_tokens": 1003
+    },
+    {
+      "seed": 7302,
+      "task": "stable-unique",
+      "policy": "balanced",
+      "recounted_input_tokens": 279
+    },
+    {
+      "seed": 7302,
+      "task": "inclusive-range",
+      "policy": "trim256",
+      "recounted_input_tokens": 628
+    },
+    {
+      "seed": 7302,
+      "task": "inclusive-range",
+      "policy": "dedupe",
+      "recounted_input_tokens": 328
+    },
+    {
+      "seed": 7302,
+      "task": "inclusive-range",
+      "policy": "summary",
+      "recounted_input_tokens": 292
+    },
+    {
+      "seed": 7302,
+      "task": "inclusive-range",
+      "policy": "trim64",
+      "recounted_input_tokens": 244
+    },
+    {
+      "seed": 7302,
+      "task": "inclusive-range",
+      "policy": "baseline",
+      "recounted_input_tokens": 1030
+    },
+    {
+      "seed": 7302,
+      "task": "inclusive-range",
+      "policy": "balanced",
+      "recounted_input_tokens": 306
+    },
+    {
+      "seed": 7302,
+      "task": "slug-spaces",
+      "policy": "trim256",
+      "recounted_input_tokens": 617
+    },
+    {
+      "seed": 7302,
+      "task": "slug-spaces",
+      "policy": "dedupe",
+      "recounted_input_tokens": 337
+    },
+    {
+      "seed": 7302,
+      "task": "slug-spaces",
+      "policy": "summary",
+      "recounted_input_tokens": 301
+    },
+    {
+      "seed": 7302,
+      "task": "slug-spaces",
+      "policy": "trim64",
+      "recounted_input_tokens": 233
+    },
+    {
+      "seed": 7302,
+      "task": "slug-spaces",
+      "policy": "baseline",
+      "recounted_input_tokens": 1039
+    },
+    {
+      "seed": 7302,
+      "task": "slug-spaces",
+      "policy": "balanced",
+      "recounted_input_tokens": 315
+    },
+    {
+      "seed": 7302,
+      "task": "zero-divisor",
+      "policy": "trim256",
+      "recounted_input_tokens": 624
+    },
+    {
+      "seed": 7302,
+      "task": "zero-divisor",
+      "policy": "dedupe",
+      "recounted_input_tokens": 312
+    },
+    {
+      "seed": 7302,
+      "task": "zero-divisor",
+      "policy": "summary",
+      "recounted_input_tokens": 276
+    },
+    {
+      "seed": 7302,
+      "task": "zero-divisor",
+      "policy": "trim64",
+      "recounted_input_tokens": 240
+    },
+    {
+      "seed": 7302,
+      "task": "zero-divisor",
+      "policy": "baseline",
+      "recounted_input_tokens": 1014
+    },
+    {
+      "seed": 7302,
+      "task": "zero-divisor",
+      "policy": "balanced",
+      "recounted_input_tokens": 290
+    },
+    {
+      "seed": 7302,
+      "task": "clamp-negative",
+      "policy": "trim256",
+      "recounted_input_tokens": 618
+    },
+    {
+      "seed": 7302,
+      "task": "clamp-negative",
+      "policy": "dedupe",
+      "recounted_input_tokens": 326
+    },
+    {
+      "seed": 7302,
+      "task": "clamp-negative",
+      "policy": "summary",
+      "recounted_input_tokens": 290
+    },
+    {
+      "seed": 7302,
+      "task": "clamp-negative",
+      "policy": "trim64",
+      "recounted_input_tokens": 234
+    },
+    {
+      "seed": 7302,
+      "task": "clamp-negative",
+      "policy": "baseline",
+      "recounted_input_tokens": 1028
+    },
+    {
+      "seed": 7302,
+      "task": "clamp-negative",
+      "policy": "balanced",
+      "recounted_input_tokens": 304
+    },
+    {
+      "seed": 7302,
+      "task": "case-insensitive",
+      "policy": "trim256",
+      "recounted_input_tokens": 623
+    },
+    {
+      "seed": 7302,
+      "task": "case-insensitive",
+      "policy": "dedupe",
+      "recounted_input_tokens": 321
+    },
+    {
+      "seed": 7302,
+      "task": "case-insensitive",
+      "policy": "summary",
+      "recounted_input_tokens": 285
+    },
+    {
+      "seed": 7302,
+      "task": "case-insensitive",
+      "policy": "trim64",
+      "recounted_input_tokens": 239
+    },
+    {
+      "seed": 7302,
+      "task": "case-insensitive",
+      "policy": "baseline",
+      "recounted_input_tokens": 1023
+    },
+    {
+      "seed": 7302,
+      "task": "case-insensitive",
+      "policy": "balanced",
+      "recounted_input_tokens": 299
+    },
+    {
+      "seed": 7302,
+      "task": "missing-value",
+      "policy": "trim256",
+      "recounted_input_tokens": 623
+    },
+    {
+      "seed": 7302,
+      "task": "missing-value",
+      "policy": "dedupe",
+      "recounted_input_tokens": 333
+    },
+    {
+      "seed": 7302,
+      "task": "missing-value",
+      "policy": "summary",
+      "recounted_input_tokens": 297
+    },
+    {
+      "seed": 7302,
+      "task": "missing-value",
+      "policy": "trim64",
+      "recounted_input_tokens": 239
+    },
+    {
+      "seed": 7302,
+      "task": "missing-value",
+      "policy": "baseline",
+      "recounted_input_tokens": 1035
+    },
+    {
+      "seed": 7302,
+      "task": "missing-value",
+      "policy": "balanced",
+      "recounted_input_tokens": 311
+    },
+    {
+      "seed": 7303,
+      "task": "empty-mean",
+      "policy": "balanced",
+      "recounted_input_tokens": 303
+    },
+    {
+      "seed": 7303,
+      "task": "empty-mean",
+      "policy": "baseline",
+      "recounted_input_tokens": 1027
+    },
+    {
+      "seed": 7303,
+      "task": "empty-mean",
+      "policy": "trim64",
+      "recounted_input_tokens": 237
+    },
+    {
+      "seed": 7303,
+      "task": "empty-mean",
+      "policy": "dedupe",
+      "recounted_input_tokens": 325
+    },
+    {
+      "seed": 7303,
+      "task": "empty-mean",
+      "policy": "trim256",
+      "recounted_input_tokens": 621
+    },
+    {
+      "seed": 7303,
+      "task": "empty-mean",
+      "policy": "summary",
+      "recounted_input_tokens": 289
+    },
+    {
+      "seed": 7303,
+      "task": "stable-unique",
+      "policy": "balanced",
+      "recounted_input_tokens": 279
+    },
+    {
+      "seed": 7303,
+      "task": "stable-unique",
+      "policy": "baseline",
+      "recounted_input_tokens": 1003
+    },
+    {
+      "seed": 7303,
+      "task": "stable-unique",
+      "policy": "trim64",
+      "recounted_input_tokens": 227
+    },
+    {
+      "seed": 7303,
+      "task": "stable-unique",
+      "policy": "dedupe",
+      "recounted_input_tokens": 301
+    },
+    {
+      "seed": 7303,
+      "task": "stable-unique",
+      "policy": "trim256",
+      "recounted_input_tokens": 611
+    },
+    {
+      "seed": 7303,
+      "task": "stable-unique",
+      "policy": "summary",
+      "recounted_input_tokens": 265
+    },
+    {
+      "seed": 7303,
+      "task": "inclusive-range",
+      "policy": "balanced",
+      "recounted_input_tokens": 306
+    },
+    {
+      "seed": 7303,
+      "task": "inclusive-range",
+      "policy": "baseline",
+      "recounted_input_tokens": 1030
+    },
+    {
+      "seed": 7303,
+      "task": "inclusive-range",
+      "policy": "trim64",
+      "recounted_input_tokens": 244
+    },
+    {
+      "seed": 7303,
+      "task": "inclusive-range",
+      "policy": "dedupe",
+      "recounted_input_tokens": 328
+    },
+    {
+      "seed": 7303,
+      "task": "inclusive-range",
+      "policy": "trim256",
+      "recounted_input_tokens": 628
+    },
+    {
+      "seed": 7303,
+      "task": "inclusive-range",
+      "policy": "summary",
+      "recounted_input_tokens": 292
+    },
+    {
+      "seed": 7303,
+      "task": "slug-spaces",
+      "policy": "balanced",
+      "recounted_input_tokens": 315
+    },
+    {
+      "seed": 7303,
+      "task": "slug-spaces",
+      "policy": "baseline",
+      "recounted_input_tokens": 1039
+    },
+    {
+      "seed": 7303,
+      "task": "slug-spaces",
+      "policy": "trim64",
+      "recounted_input_tokens": 233
+    },
+    {
+      "seed": 7303,
+      "task": "slug-spaces",
+      "policy": "dedupe",
+      "recounted_input_tokens": 337
+    },
+    {
+      "seed": 7303,
+      "task": "slug-spaces",
+      "policy": "trim256",
+      "recounted_input_tokens": 617
+    },
+    {
+      "seed": 7303,
+      "task": "slug-spaces",
+      "policy": "summary",
+      "recounted_input_tokens": 301
+    },
+    {
+      "seed": 7303,
+      "task": "zero-divisor",
+      "policy": "balanced",
+      "recounted_input_tokens": 290
+    },
+    {
+      "seed": 7303,
+      "task": "zero-divisor",
+      "policy": "baseline",
+      "recounted_input_tokens": 1014
+    },
+    {
+      "seed": 7303,
+      "task": "zero-divisor",
+      "policy": "trim64",
+      "recounted_input_tokens": 240
+    },
+    {
+      "seed": 7303,
+      "task": "zero-divisor",
+      "policy": "dedupe",
+      "recounted_input_tokens": 312
+    },
+    {
+      "seed": 7303,
+      "task": "zero-divisor",
+      "policy": "trim256",
+      "recounted_input_tokens": 624
+    },
+    {
+      "seed": 7303,
+      "task": "zero-divisor",
+      "policy": "summary",
+      "recounted_input_tokens": 276
+    },
+    {
+      "seed": 7303,
+      "task": "clamp-negative",
+      "policy": "balanced",
+      "recounted_input_tokens": 304
+    },
+    {
+      "seed": 7303,
+      "task": "clamp-negative",
+      "policy": "baseline",
+      "recounted_input_tokens": 1028
+    },
+    {
+      "seed": 7303,
+      "task": "clamp-negative",
+      "policy": "trim64",
+      "recounted_input_tokens": 234
+    },
+    {
+      "seed": 7303,
+      "task": "clamp-negative",
+      "policy": "dedupe",
+      "recounted_input_tokens": 326
+    },
+    {
+      "seed": 7303,
+      "task": "clamp-negative",
+      "policy": "trim256",
+      "recounted_input_tokens": 618
+    },
+    {
+      "seed": 7303,
+      "task": "clamp-negative",
+      "policy": "summary",
+      "recounted_input_tokens": 290
+    },
+    {
+      "seed": 7303,
+      "task": "case-insensitive",
+      "policy": "balanced",
+      "recounted_input_tokens": 299
+    },
+    {
+      "seed": 7303,
+      "task": "case-insensitive",
+      "policy": "baseline",
+      "recounted_input_tokens": 1023
+    },
+    {
+      "seed": 7303,
+      "task": "case-insensitive",
+      "policy": "trim64",
+      "recounted_input_tokens": 239
+    },
+    {
+      "seed": 7303,
+      "task": "case-insensitive",
+      "policy": "dedupe",
+      "recounted_input_tokens": 321
+    },
+    {
+      "seed": 7303,
+      "task": "case-insensitive",
+      "policy": "trim256",
+      "recounted_input_tokens": 623
+    },
+    {
+      "seed": 7303,
+      "task": "case-insensitive",
+      "policy": "summary",
+      "recounted_input_tokens": 285
+    },
+    {
+      "seed": 7303,
+      "task": "missing-value",
+      "policy": "balanced",
+      "recounted_input_tokens": 311
+    },
+    {
+      "seed": 7303,
+      "task": "missing-value",
+      "policy": "baseline",
+      "recounted_input_tokens": 1035
+    },
+    {
+      "seed": 7303,
+      "task": "missing-value",
+      "policy": "trim64",
+      "recounted_input_tokens": 239
+    },
+    {
+      "seed": 7303,
+      "task": "missing-value",
+      "policy": "dedupe",
+      "recounted_input_tokens": 333
+    },
+    {
+      "seed": 7303,
+      "task": "missing-value",
+      "policy": "trim256",
+      "recounted_input_tokens": 623
+    },
+    {
+      "seed": 7303,
+      "task": "missing-value",
+      "policy": "summary",
+      "recounted_input_tokens": 297
+    }
+  ],
+  "policies": [
+    {
+      "name": "baseline",
+      "mode": "none",
+      "limit": 256,
+      "cache": false,
+      "simple": false
+    },
+    {
+      "name": "dedupe",
+      "mode": "dedupe",
+      "limit": 256,
+      "cache": false,
+      "simple": false
+    },
+    {
+      "name": "summary",
+      "mode": "summary",
+      "limit": 256,
+      "cache": false,
+      "simple": false
+    },
+    {
+      "name": "trim256",
+      "mode": "truncate",
+      "limit": 256,
+      "cache": false,
+      "simple": false
+    },
+    {
+      "name": "trim64",
+      "mode": "truncate",
+      "limit": 64,
+      "cache": false,
+      "simple": false
+    },
+    {
+      "name": "balanced",
+      "mode": "summary",
+      "limit": 256,
+      "cache": true,
+      "simple": true
+    }
+  ],
+  "source_hashes": {
+    "src/lean/server.py": "9264c7238018111a9b5a0d183e3fa4bcb9641c9214d7bce7b6fedd10daabbb80",
+    "src/lean/tasks.py": "c3d08c30cff986e828c69ed416af24e6944843ab19994a0fe933beb1b8be496b",
+    "src/lean/policy.py": "8a447fa62f3e0b51cf6798f81f3a598ed7b12ca886afaeb415380312177030c2",
+    "src/lean/__init__.py": "008c94003aa0a185a1c27c3c3af5e1827811989785819b48060bed65ae778935",
+    "sdk/typescript/index.ts": "373df0403a98eef3c7debfb5bf185e44e96b9128500232ed4cc85bf8d455b80c"
+  }
+}

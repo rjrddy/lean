@@ -1,0 +1,44 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "model_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "model_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+  "tokenizer_sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+  "environment": {
+    "python": "3.13.2",
+    "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+    "torch": "2.14.1",
+    "transformers": "5.20.2"
+  },
+  "weight_hash_matches_public_cache": true,
+  "hardware": [
+    "Mac14,9",
+    "10",
+    "17179869184"
+  ],
+  "source_commit": "6f37da75875af2bdd671d80169f3cc52fe585a82",
+  "source_sha256": {
+    "src/lean/server.py": "9264c7238018111a9b5a0d183e3fa4bcb9641c9214d7bce7b6fedd10daabbb80",
+    "src/lean/tasks.py": "c3d08c30cff986e828c69ed416af24e6944843ab19994a0fe933beb1b8be496b",
+    "src/lean/policy.py": "8a447fa62f3e0b51cf6798f81f3a598ed7b12ca886afaeb415380312177030c2",
+    "src/lean/__init__.py": "008c94003aa0a185a1c27c3c3af5e1827811989785819b48060bed65ae778935",
+    "src/lean_agent_filter.egg-info/PKG-INFO": "40b38444eb35f19cff00c2397cc3850b08281463f79ef40705ed8c2156102588",
+    "src/lean_agent_filter.egg-info/SOURCES.txt": "ed550c157dc4f450f42b28233666d4adc9be907fe36d5a3d6f4458e4276dad9c",
+    "src/lean_agent_filter.egg-info/requires.txt": "d1dd928b856f19a89d88505c7cca25efa77df1256d7b12e3bfbf4ce619694d76",
+    "src/lean_agent_filter.egg-info/top_level.txt": "bb3cb41b3af51ee06b911f551be1ba3055665a65326ad55fcb36c2871ca86634",
+    "src/lean_agent_filter.egg-info/dependency_links.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/lean/__pycache__/policy.cpython-313.pyc": "0f62273a2245cbc521950566ed4ac1d285810752980f52dfe0f86d36356c4a9b",
+    "src/lean/__pycache__/server.cpython-313.pyc": "b8d237e62e5e2f45cbd1093c63c28ac292eb1c98ade2ee2917aed8c92a1931e7",
+    "src/lean/__pycache__/tasks.cpython-313.pyc": "d33bf60d7c2700c783ee351a4af92484c1899764fdd9ff86f6c635a8d1dc8a15",
+    "src/lean/__pycache__/__init__.cpython-313.pyc": "989139c99b431468a3b76d82e715858d372cb400a7c0fcbbf2da3a735e4aa154",
+    "sdk/typescript/index.ts": "373df0403a98eef3c7debfb5bf185e44e96b9128500232ed4cc85bf8d455b80c",
+    "scripts/fetch_model.py": "7079b82d1b36168356e993082f37773b503365172bbc4c919dac23402c8d7d5a",
+    "scripts/container_smoke.py": "58607805b7a6640bbf1e4d1931cc293f6ccb654a4b880aa1d0d011b2ece947b2",
+    "scripts/review.py": "156d97ccfa63c068d0b93fa8a067201d76ecfbbddd85ba4df776a58d3f3ab18b",
+    "scripts/bench.py": "a1deccef0054bf79013d1757ecf5d1ff7d4323b9cee46f2b6dd06d5c1024933b",
+    "scripts/gate.py": "3213bb38ff6e072f76fe93e3c5039c2732d19ee699e3f39506af2506337ef5cc",
+    "scripts/evaluate.py": "53bcf183cf15efd7c0232241251d861d7dfb95ed8f0410616f0cb9ffe70c9a0c",
+    "apps/web/src/main.tsx": "f3728661600424eb9d7dcfd11e6af335dcfe00e642f196a497f6e58c7b4bc609",
+    "apps/web/src/sdk-test.ts": "f0bc531da7ba99bcb9c88316ae03ed1be25d16e54730d7a5c500561964b3ab17",
+    "apps/web/src/style.css": "d95f2ea8463981536c37ea4372790edd0892d065aa01cf1662dd4ec68ac2ac19"
+  }
+}
