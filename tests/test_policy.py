@@ -118,3 +118,28 @@ def test_python_typescript_real_bpe_parity():
     results = json.loads(run.stdout)
     for fixture, result in zip(fixtures, results, strict=True):
         assert transform(fixture["text"], Policy(**fixture["policy"])) == result
+
+
+def test_actual_declared_dependency_delta():
+    from lean.policy import dependency_delta
+
+    result = dependency_delta(
+        '{"dependencies":{"react":"1"}}',
+        '{"dependencies":{"react":"2","lodash":"1"}}',
+        "package.json",
+    )
+    assert result["added"] == ["lodash"] and result["changed"] == ["react"]
+    result = dependency_delta(
+        "[project]\ndependencies=[]", '[project]\ndependencies=["requests>=2"]', "pyproject.toml"
+    )
+    assert result["added"] == ["requests"]
+
+
+def test_pluggable_filter_executes_for_live_and_cached_results():
+    def plugin(text, policy):
+        return transform(text.replace("noise", ""), policy)
+
+    middleware = Middleware(Policy("plugin", cache=True), "plugin-run", filter_fn=plugin)
+    tool = Tool("read", "1", True)
+    assert middleware.call(tool, {}, lambda _: "noise signal")["text"] == " signal"
+    assert middleware.call(tool, {}, lambda _: "not called")["text"] == " signal"

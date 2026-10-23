@@ -106,6 +106,7 @@ export class Middleware {
     public capacity = 16,
     public maxBytes = 1000000,
     public clock = () => performance.now() / 1000,
+    public filterFn: typeof transform = transform,
   ) {
     if (
       !scope ||
@@ -143,13 +144,13 @@ export class Middleware {
         this.entries.set(key, cached);
         this.cacheHits++;
         return {
-          ...transform(cached.raw, this.policy, this.tokenizer),
+          ...this.filterFn(cached.raw, this.policy, this.tokenizer),
           cache_hit: true,
         };
       }
       this.toolInvocations++;
       const raw = await fn(structuredClone(args));
-      const result = transform(raw, this.policy, this.tokenizer),
+      const result = this.filterFn(raw, this.policy, this.tokenizer),
         size = new TextEncoder().encode(raw).length;
       if (this.policy.cache && tool.readonly && size <= this.maxBytes) {
         while (

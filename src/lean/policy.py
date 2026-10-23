@@ -7,6 +7,7 @@ import copy
 import hashlib
 import json
 import math
+import os
 import re
 import time
 from collections import OrderedDict
@@ -17,7 +18,7 @@ from typing import Any
 
 from tokenizers import Tokenizer
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(os.getenv("LEAN_ROOT", str(Path(__file__).resolve().parents[2])))
 TOKENIZER = Tokenizer.from_file(str(ROOT / "assets/tokenizer.json"))
 
 
@@ -115,12 +116,14 @@ class Middleware:
         capacity: int = 16,
         max_bytes: int = 1_000_000,
         clock: Callable[[], float] = time.monotonic,
+        filter_fn: Callable[[str, Policy], dict] = transform,
     ) -> None:
         if not scope or not math.isfinite(ttl) or ttl <= 0 or not 1 <= capacity <= 1000:
             raise ValueError("invalid cache bounds/scope")
         if not 1 <= max_bytes <= 10_000_000:
             raise ValueError("invalid byte capacity")
         self.policy, self.scope, self.clock = policy, scope, clock
+        self.filter_fn = filter_fn
         self.ttl, self.capacity, self.max_bytes = ttl, capacity, max_bytes
         self.entries: OrderedDict[str, tuple[float, str, int]] = OrderedDict()
         self.bytes = 0
@@ -150,7 +153,7 @@ class Middleware:
             self.tool_invocations += 1
             raw = fn(copy.deepcopy(args))
             # Validate and transform before adding to cache. Failed/oversized results never cache.
-            result = transform(raw, self.policy)
+            result = self.filter_fn(raw, self.policy)
             size = len(raw.encode())
             if self.policy.cache and tool.readonly and size <= self.max_bytes:
                 while self.entries and (
@@ -161,7 +164,7 @@ class Middleware:
                 self.entries[key] = (self.clock() + self.ttl, raw, size)
                 self.bytes += size
             return {**result, "cache_hit": False}
-        return {**transform(raw, self.policy), "cache_hit": True}
+        return {**self.filter_fn(raw, self.policy), "cache_hit": True}
 
 
 def cost(
@@ -223,4 +226,32 @@ def complexity(source: str, previous: str = "") -> dict:
         "removed_lines": sum(x.startswith("- ") for x in delta),
         "definitions_not_lexically_referenced": sorted(definitions - used),
         "limits": "signals only; exported entrypoints/dynamic references can be false positives",
+    }
+
+
+def dependency_delta(before: str, after: str, format: str) -> dict:
+    """Compare declared dependencies; imports alone do not prove a package was added."""
+    import tomllib
+
+    def extract(text: str) -> dict:
+        if format == "package.json":
+            value = json.loads(text)
+            return {**value.get("dependencies", {}), **value.get("devDependencies", {})}
+        if format == "pyproject.toml":
+            deps = tomllib.loads(text).get("project", {}).get("dependencies", [])
+            out = {}
+            for declaration in deps:
+                match = re.match(r"[A-Za-z0-9._-]+", declaration)
+                if not match:
+                    raise ValueError("invalid requirement")
+                out[match[0].lower().replace("_", "-")] = declaration
+            return out
+        raise ValueError("unknown manifest format")
+
+    a, b = extract(before), extract(after)
+    return {
+        "added": sorted(set(b) - set(a)),
+        "removed": sorted(set(a) - set(b)),
+        "changed": sorted(k for k in set(a) & set(b) if a[k] != b[k]),
+        "limits": "declared direct dependencies only; no lockfile or runtime necessity inference",
     }
