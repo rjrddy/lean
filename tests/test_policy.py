@@ -143,3 +143,8 @@ def test_pluggable_filter_executes_for_live_and_cached_results():
     tool = Tool("read", "1", True)
     assert middleware.call(tool, {}, lambda _: "noise signal")["text"] == " signal"
     assert middleware.call(tool, {}, lambda _: "not called")["text"] == " signal"
+
+
+def test_structured_summary_preserves_indented_source_body():
+    report = "[INFO] noise\n[SOURCE] def solve(x):\n    return x + 1\n[ASSERT] solve(1) == 2"
+    assert "    return x + 1" in transform(report, POLICIES[2])["text"]

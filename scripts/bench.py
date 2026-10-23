@@ -6,6 +6,8 @@ import hashlib
 import json
 import platform
 import statistics
+import subprocess
+import sys
 import time
 from dataclasses import asdict
 from pathlib import Path
@@ -93,6 +95,11 @@ def main() -> None:
     }
     (ROOT / "docs/results/bench.json").write_text(json.dumps(result, indent=2) + "\n")
     (ROOT / "docs/results/caught-failure.json").write_text(json.dumps(controls, indent=2) + "\n")
+    rejected = subprocess.run([sys.executable, "scripts/gate.py"], capture_output=True, text=True)
+    assert rejected.returncode == 1
+    (ROOT / "docs/results/rejected-promotion.txt").write_text(
+        "$ .venv/bin/python scripts/gate.py\n" + rejected.stdout + "exit_code=1\n"
+    )
     print(
         json.dumps(
             {

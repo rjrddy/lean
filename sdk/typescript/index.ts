@@ -41,13 +41,16 @@ export function transform(text: string, policy: Policy, tokenizer: Tokenizer) {
     if (removed)
       text += `\n[Lean: removed ${removed} repeated lines; multiplicity lost]`;
   } else if (policy.mode === "summary") {
-    const selected = [
-      ...new Set(
-        lines().filter((line) =>
-          /^\[(ASSERT|FAIL|SOURCE|RESULT|ERROR)\]/.test(line),
-        ),
-      ),
-    ];
+    const blocks: string[][] = [];
+    let current: string[] | null = null;
+    for (const line of lines()) {
+      if (/^\[(ASSERT|FAIL|SOURCE|RESULT|ERROR)\]/.test(line)) {
+        current = [line];
+        blocks.push(current);
+      } else if (current !== null && /^[ \t]/.test(line)) current.push(line);
+      else current = null;
+    }
+    const selected = [...new Set(blocks.map((block) => block.join("\n")))];
     if (selected.length)
       text =
         selected.join("\n") +

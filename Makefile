@@ -10,6 +10,7 @@ lint:
 	.venv/bin/ruff check src tests scripts
 	.venv/bin/ruff format --check src tests scripts
 	npm --prefix apps/web run lint
+	apps/web/node_modules/.bin/prettier --check sdk/typescript
 test:
 	$(PY) -m pytest -q
 bench:

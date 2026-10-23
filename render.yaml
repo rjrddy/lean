@@ -1,0 +1,14 @@
+# Prepared only. No account or deployment created. Model evaluation is recorded evidence.
+services:
+  - type: web
+    name: lean-policy-lab
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: LEAN_TOKEN
+        generateValue: true
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: '8092'

@@ -70,13 +70,17 @@ def transform(text: str, policy: Policy) -> dict:
         if removed:
             text += f"\n[Lean: removed {removed} repeated lines; multiplicity lost]"
     elif policy.mode == "summary":
-        lines = text.splitlines()
-        selected = list(
-            dict.fromkeys(
-                line for line in lines if re.match(r"\[(ASSERT|FAIL|SOURCE|RESULT|ERROR)\]", line)
-            )
-        )
-        # No recognized structure: preserve instead of silently fabricating a summary.
+        blocks: list[list[str]] = []
+        current = None
+        for line in text.splitlines():
+            if re.match(r"\[(ASSERT|FAIL|SOURCE|RESULT|ERROR)\]", line):
+                current = [line]
+                blocks.append(current)
+            elif current is not None and line.startswith((" ", "\t")):
+                current.append(line)
+            else:
+                current = None
+        selected = list(dict.fromkeys("\n".join(block) for block in blocks))
         if selected:
             text = "\n".join(selected) + "\n[Lean: structured selection; other lines omitted]"
     elif policy.mode == "truncate":
