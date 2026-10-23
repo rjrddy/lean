@@ -1,0 +1,16 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import {Tokenizer as HFTokenizer} from '@huggingface/tokenizers';
+import {Middleware,transform, type Policy} from '../../../sdk/typescript/index.ts';
+const tok=new HFTokenizer(JSON.parse(readFileSync('assets/tokenizer.json','utf8')),JSON.parse(readFileSync('assets/tokenizer_config.json','utf8')));
+const tokenizer={encode:(s:string)=>tok.encode(s,{add_special_tokens:false}).ids,decode:(ids:number[])=>tok.decode(ids,{skip_special_tokens:false})};
+const input=JSON.parse(readFileSync(0,'utf8')) as {text:string;policy:Policy}[];
+const out=input.map(row=>transform(row.text,row.policy,tokenizer));
+const policy={name:'test',mode:'none' as const,limit:64,cache:true,simple:false};let now=0,calls=0;
+const cache=new Middleware(policy,'synthetic',tokenizer,1,2,10000,()=>now);
+const tool={name:'read',version:'1',readonly:true};const fn=async()=>{calls++;return 'hello';};
+await cache.call(tool,{x:1},fn);assert.equal((await cache.call(tool,{x:1},fn)).cache_hit,true);assert.equal(calls,1);
+now=2;await cache.call(tool,{x:1},fn);assert.equal(calls,2);
+await cache.call({...tool,readonly:false},{x:1},fn);assert.equal(calls,3);
+await assert.rejects(()=>cache.call(tool,{},async()=>{throw Error('synthetic tool error')}));
+console.log(JSON.stringify(out));

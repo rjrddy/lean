@@ -1,0 +1,1 @@
+Public tokenizer from HuggingFaceTB/SmolLM2-135M-Instruct, revision 12fd25f77366fa6b3b4b768ec3050bf629380bac (Apache-2.0). Original model card: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct. Weights remain ignored; only tokenizer data is vendored for offline counts.
