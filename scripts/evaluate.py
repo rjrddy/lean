@@ -48,8 +48,12 @@ def main() -> None:
             for policy in policies:
                 middleware = Middleware(policy, f"{seed}:{task['id']}")
                 tool = Tool("test.report", "fixture-v1", readonly=True)
-                first = middleware.call(tool, {"task": task["id"]}, lambda _: task["context"])
-                second = middleware.call(tool, {"task": task["id"]}, lambda _: task["context"])
+                first = middleware.call(
+                    tool, {"task": task["id"]}, lambda _, context=task["context"]: context
+                )
+                second = middleware.call(
+                    tool, {"task": task["id"]}, lambda _, context=task["context"]: context
+                )
                 # Repeated tool results remain repeated context: cache saves tool work, not tokens.
                 context = first["text"] + "\n" + second["text"]
                 system = "Choose the correct Python patch. Reply with A, B, or C only."
@@ -95,7 +99,7 @@ def main() -> None:
                     "correct_choice": labels[task["correct_index"]],
                     "input_tokens": int(encoded["input_ids"].numel()),
                     "output_tokens": 1,
-                    "output_usage_basis": "one constrained label; full-vocabulary generation not run",
+                    "output_usage_basis": "one constrained label; not free generation",
                     "inference_seconds": elapsed,
                     "label_logits": logits.tolist(),
                     "tool_invocations": middleware.tool_invocations,
