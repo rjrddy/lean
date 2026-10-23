@@ -6,7 +6,7 @@ Agent tool outputs can waste context or hide critical constraints; Lean measures
 
 Actual local SmolLM inference: 144 decisions; summary input tokens 24,597 → 6,885 (72.0% fewer); baseline and summary both 5/24 checks passed—a weak model result, **not evidence of preserved autonomous coding ability** ([raw experiment](docs/results/evaluation.json)).
 11 tests pass; 3 executable semantic-loss controls expose harm; 100 repeated read-only requests invoke the tool 1 time ([gates](docs/results/gates.txt), [samples](docs/results/bench.json), [promotion rejected](docs/results/rejected-promotion.txt)).
-Summary filtering median 819.27 µs for the synthetic report; actual UI recording 92.60 s ([browser proof](docs/results/browser/review.json)); realized dollar savings **not measured**.
+Summary filtering median 819.27 µs for the synthetic report; actual UI recording 93.12 s ([browser proof](docs/results/browser/review.json)); realized dollar savings **not measured**.
 
 ## Architecture
 
