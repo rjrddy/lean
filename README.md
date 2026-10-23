@@ -37,7 +37,7 @@ make models eval  # Optional: install/download the pinned public model and rerun
 
 ## Decisions and limits
 
-**Partial for the full proof.** This implements the filters, scoped cache, simplest-patch constraint, Python AST/diff/dependency-manifest signals, both SDKs, real paired inference and a React report. The measured model chooses among trusted patches rather than autonomously writing code. It makes the same selections across policies and succeeds poorly. Equal observed counts do not demonstrate useful agent effectiveness. A configured promotion gate exits nonzero on insufficient success and missing dollar evidence.
+**Partial for the full proof.** This implements the filters, scoped cache, simplest-patch constraint, Python AST/diff/dependency-manifest signals, both SDKs, real paired inference and a React report. The measured model chooses among trusted patches rather than autonomously writing code. It always selected candidate A, regardless of policy, and succeeds poorly. Equal observed counts do not demonstrate useful agent effectiveness. A configured promotion gate exits nonzero on insufficient success and missing dollar evidence.
 
 | Policy | Input tokens | Reduction | Passed / trials |
 |---|---:|---:|---:|

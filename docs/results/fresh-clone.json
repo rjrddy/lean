@@ -1,0 +1,48 @@
+{
+  "source_commit": "3e1b8e88f4761483b29876bdc09ff34ca7f724db",
+  "checks": [
+    "setup",
+    "build",
+    "lint",
+    "test",
+    "bench",
+    "actual make demo",
+    "static UI",
+    "live real BPE/cache",
+    "labelled recorded inference"
+  ],
+  "lab_receipt": {
+    "first": {
+      "text": "[FAIL] Fix the mean function.\n[ASSERT] Empty input must return 0; otherwise return the arithmetic mean.\n[SOURCE] def solve(xs):\n    return sum(xs) / len(xs)\n[ASSERT] assert solve([]) == 0; assert solve([2,4]) == 3; assert solve([2]) == 2\n[Lean: structured selection; other lines omitted]",
+      "before_tokens": 457,
+      "after_tokens": 88,
+      "policy": {
+        "name": "balanced",
+        "mode": "summary",
+        "limit": 256,
+        "cache": true,
+        "simple": true
+      },
+      "changed": true,
+      "cache_hit": false
+    },
+    "second": {
+      "text": "[FAIL] Fix the mean function.\n[ASSERT] Empty input must return 0; otherwise return the arithmetic mean.\n[SOURCE] def solve(xs):\n    return sum(xs) / len(xs)\n[ASSERT] assert solve([]) == 0; assert solve([2,4]) == 3; assert solve([2]) == 2\n[Lean: structured selection; other lines omitted]",
+      "before_tokens": 457,
+      "after_tokens": 88,
+      "policy": {
+        "name": "balanced",
+        "mode": "summary",
+        "limit": 256,
+        "cache": true,
+        "simple": true
+      },
+      "changed": true,
+      "cache_hit": true
+    },
+    "invocations": 1,
+    "cache_hits": 1,
+    "inference_run": false,
+    "basis": "live compression/cache only; no model executed by this endpoint"
+  }
+}

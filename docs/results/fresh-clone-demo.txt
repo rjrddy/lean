@@ -1,0 +1,94 @@
+python3 -m venv .venv
+.venv/bin/python -m pip install -e . -r requirements-dev.txt
+Obtaining file:///private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/lean-clone-4ev7vvby/repo
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: pip==26.2.2 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 1)) (26.2.2)
+Requirement already satisfied: pytest==9.1.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 2)) (9.1.1)
+Requirement already satisfied: ruff==0.17.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 3)) (0.17.1)
+Requirement already satisfied: pip-audit==2.9.0 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 4)) (2.9.0)
+Requirement already satisfied: tokenizers==0.23.3 in ./.venv/lib/python3.13/site-packages (from lean-agent-filter==0.1.0) (0.23.3)
+Requirement already satisfied: iniconfig>=1.0.1 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->-r requirements-dev.txt (line 2)) (2.3.1)
+Requirement already satisfied: packaging>=22 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->-r requirements-dev.txt (line 2)) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->-r requirements-dev.txt (line 2)) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->-r requirements-dev.txt (line 2)) (2.21.0)
+Requirement already satisfied: CacheControl>=0.13.0 in ./.venv/lib/python3.13/site-packages (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (0.14.4)
+Requirement already satisfied: cyclonedx-python-lib<10,>=5 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (9.1.0)
+Requirement already satisfied: pip-api>=0.0.28 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (0.0.35)
+Requirement already satisfied: pip-requirements-parser>=32.0.0 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (32.0.1)
+Requirement already satisfied: requests>=2.31.0 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (2.34.2)
+Requirement already satisfied: rich>=12.4 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (15.0.0)
+Requirement already satisfied: toml>=0.10 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (0.10.2)
+Requirement already satisfied: platformdirs>=4.2.0 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (4.13.5)
+Requirement already satisfied: huggingface-hub<3.0,>=0.16.4 in ./.venv/lib/python3.13/site-packages (from tokenizers==0.23.3->lean-agent-filter==0.1.0) (2.2.0)
+Requirement already satisfied: license-expression<31,>=30 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (30.4.4)
+Requirement already satisfied: packageurl-python<2,>=0.11 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (0.17.6)
+Requirement already satisfied: py-serializable<3.0.0,>=2.0.0 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (2.1.0)
+Requirement already satisfied: sortedcontainers<3.0.0,>=2.4.0 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (2.4.0)
+Requirement already satisfied: click<9.0.0,>=8.4.2 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (8.5.0)
+Requirement already satisfied: filelock>=3.10.0 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (4.2.4)
+Requirement already satisfied: fsspec>=2023.5.0 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (2026.9.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.6.0 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (1.7.0)
+Requirement already satisfied: httpx2<3,>=2.0.0 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (2.16.0)
+Requirement already satisfied: pyyaml>=5.1 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (6.0.3)
+Requirement already satisfied: tqdm>=4.42.1 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (4.70.1)
+Requirement already satisfied: typing-extensions>=4.1.0 in ./.venv/lib/python3.13/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (4.16.0)
+Requirement already satisfied: anyio>=4.10 in ./.venv/lib/python3.13/site-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (4.15.1)
+Requirement already satisfied: httpcore2==2.16.0 in ./.venv/lib/python3.13/site-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (2.16.0)
+Requirement already satisfied: idna>=3.18 in ./.venv/lib/python3.13/site-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (3.20)
+Requirement already satisfied: truststore>=0.10 in ./.venv/lib/python3.13/site-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (0.10.5)
+Requirement already satisfied: h11>=0.16 in ./.venv/lib/python3.13/site-packages (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0) (0.16.0)
+Requirement already satisfied: boolean.py>=4.0 in ./.venv/lib/python3.13/site-packages (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (5.0)
+Requirement already satisfied: defusedxml<0.8.0,>=0.7.1 in ./.venv/lib/python3.13/site-packages (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (0.7.1)
+Requirement already satisfied: msgpack<2.0.0,>=0.5.2 in ./.venv/lib/python3.13/site-packages (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (1.2.3)
+Requirement already satisfied: pyparsing in ./.venv/lib/python3.13/site-packages (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (3.3.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (3.5.2)
+Requirement already satisfied: urllib3<3,>=1.26 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (2.8.0)
+Requirement already satisfied: certifi>=2023.5.7 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (2026.10.19)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./.venv/lib/python3.13/site-packages (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (4.2.0)
+Requirement already satisfied: mdurl~=0.1 in ./.venv/lib/python3.13/site-packages (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4)) (0.1.2)
+Building wheels for collected packages: lean-agent-filter
+  Building editable for lean-agent-filter (pyproject.toml): started
+  Building editable for lean-agent-filter (pyproject.toml): finished with status 'done'
+  Created wheel for lean-agent-filter: filename=lean_agent_filter-0.1.0-0.editable-py3-none-any.whl size=1417 sha256=6fe21d3c43622c9ae9814bbc0e625a1685984cc4693d9e4cb6a7a12a7b0ae548
+  Stored in directory: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/pip-ephem-wheel-cache-egmnckqk/wheels/cf/0f/b4/97b4344a4ec5d0134696ecbb5c393d0c5c78d9c9f245ca28a0
+Successfully built lean-agent-filter
+Installing collected packages: lean-agent-filter
+  Attempting uninstall: lean-agent-filter
+    Found existing installation: lean-agent-filter 0.1.0
+    Uninstalling lean-agent-filter-0.1.0:
+      Successfully uninstalled lean-agent-filter-0.1.0
+Successfully installed lean-agent-filter-0.1.0
+npm --prefix apps/web ci
+
+added 28 packages, and audited 29 packages in 1s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm --prefix apps/web run build
+
+> lean-field-notes@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-BMmrNLej.css    9.68 kB │ gzip:  2.68 kB
+dist/assets/index-C3EG3Vnq.js   206.67 kB │ gzip: 65.10 kB
+✓ built in 431ms
+.venv/bin/python -m lean.server
+{"event": "ready", "url": "http://127.0.0.1:53706"}
+{"event": "http", "status": 200, "operation": "read"}
+{"event": "http", "status": 200, "operation": "read"}
+{"event": "http", "status": 200, "operation": "write"}

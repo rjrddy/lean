@@ -1,0 +1,669 @@
+verify	Set up job	﻿2026-10-23T03:40:46.8089342Z Current runner version: '2.338.0'
+verify	Set up job	2026-10-23T03:40:46.8125737Z ##[group]Runner Image Provisioner
+verify	Set up job	2026-10-23T03:40:46.8127197Z Hosted Compute Agent
+verify	Set up job	2026-10-23T03:40:46.8128194Z Version: 20261012.601
+verify	Set up job	2026-10-23T03:40:46.8129329Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+verify	Set up job	2026-10-23T03:40:46.8130622Z Build Date: 2026-10-12T17:48:21Z
+verify	Set up job	2026-10-23T03:40:46.8132768Z Worker ID: {fbe2deb2-d22f-45c3-8448-a8d8c5bce822}
+verify	Set up job	2026-10-23T03:40:46.8134094Z Region: eastus
+verify	Set up job	2026-10-23T03:40:46.8135076Z Cloud: Azure
+verify	Set up job	2026-10-23T03:40:46.8136078Z ##[endgroup]
+verify	Set up job	2026-10-23T03:40:46.8138373Z ##[group]Operating System
+verify	Set up job	2026-10-23T03:40:46.8139573Z Ubuntu
+verify	Set up job	2026-10-23T03:40:46.8140503Z 26.04.1
+verify	Set up job	2026-10-23T03:40:46.8141445Z LTS
+verify	Set up job	2026-10-23T03:40:46.8142618Z ##[endgroup]
+verify	Set up job	2026-10-23T03:40:46.8143714Z ##[group]Runner Image
+verify	Set up job	2026-10-23T03:40:46.8144823Z Image: ubuntu-26.04
+verify	Set up job	2026-10-23T03:40:46.8145752Z Version: 20261012.163.1
+verify	Set up job	2026-10-23T03:40:46.8147731Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261012.163/images/ubuntu/Ubuntu2604-Readme.md
+verify	Set up job	2026-10-23T03:40:46.8150743Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261012.163
+verify	Set up job	2026-10-23T03:40:46.8152735Z ##[endgroup]
+verify	Set up job	2026-10-23T03:40:46.8154665Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-10-23T03:40:46.8157656Z Contents: read
+verify	Set up job	2026-10-23T03:40:46.8158777Z Metadata: read
+verify	Set up job	2026-10-23T03:40:46.8159696Z ##[endgroup]
+verify	Set up job	2026-10-23T03:40:46.8163146Z Secret source: Actions
+verify	Set up job	2026-10-23T03:40:46.8164670Z Cache mode: write
+verify	Set up job	2026-10-23T03:40:46.8166233Z Prepare workflow directory
+verify	Set up job	2026-10-23T03:40:46.8649403Z Prepare all required actions
+verify	Set up job	2026-10-23T03:40:46.8721431Z Getting action download info
+verify	Set up job	2026-10-23T03:40:47.0395472Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-10-23T03:40:47.1419377Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+verify	Set up job	2026-10-23T03:40:47.1982206Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+verify	Set up job	2026-10-23T03:40:47.3777474Z Complete job name: verify
+verify	Run actions/checkout@v4	﻿2026-10-23T03:40:47.4648359Z ##[group]Run actions/checkout@v4
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4649392Z with:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4649907Z   repository: rjrddy/lean
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4654124Z   token: ***
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4654666Z   ssh-strict: true
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4655254Z   ssh-user: git
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4655787Z   persist-credentials: true
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4656358Z   clean: true
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4656984Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4657584Z   fetch-depth: 1
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4658129Z   fetch-tags: false
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4658679Z   show-progress: true
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4659204Z   lfs: false
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4659812Z   submodules: false
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4660343Z   set-safe-directory: true
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4660955Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.4662080Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5656106Z Syncing repository: rjrddy/lean
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5658296Z ##[group]Getting Git version info
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5659205Z Working directory is '/home/runner/work/lean/lean'
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5660575Z [command]/usr/bin/git version
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5661300Z git version 2.55.0
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5691932Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5698899Z Temporarily overriding HOME='/home/runner/work/_temp/4ef79278-3033-4c38-bcda-7e85d08c63dc' before making global git config changes
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5704331Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5706367Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/lean/lean
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5769945Z Deleting the contents of '/home/runner/work/lean/lean'
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5772310Z ##[group]Initializing the repository
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5773503Z [command]/usr/bin/git init /home/runner/work/lean/lean
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5895777Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5897704Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5899653Z hint: to use in all of your new repositories, which will suppress this warning,
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5901162Z hint: call:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5902146Z hint:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5903037Z hint: 	git config --global init.defaultBranch <name>
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5904048Z hint:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5904969Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5906480Z hint: 'development'. The just-created branch can be renamed via this command:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5907676Z hint:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5908325Z hint: 	git branch -m <name>
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5909076Z hint:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5910072Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5917731Z Initialized empty Git repository in /home/runner/work/lean/lean/.git/
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5926785Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/lean
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5979885Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5981214Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.5985176Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6018886Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6020032Z ##[group]Setting up auth
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6026120Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6059411Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6552298Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6588459Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6890195Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.6940396Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.7250062Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.7295260Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.7296731Z ##[group]Fetching the repository
+verify	Run actions/checkout@v4	2026-10-23T03:40:47.7307637Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3e1b8e88f4761483b29876bdc09ff34ca7f724db:refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0255441Z From https://github.com/rjrddy/lean
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0257118Z  * [new ref]         3e1b8e88f4761483b29876bdc09ff34ca7f724db -> origin/main
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0263605Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0265539Z ##[group]Determining the checkout info
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0267862Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0275024Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0336727Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0370000Z ##[group]Checking out the ref
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0375360Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0670968Z Switched to a new branch 'main'
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0673024Z branch 'main' set up to track 'origin/main'.
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0679696Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0747713Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@v4	2026-10-23T03:40:48.0774376Z 3e1b8e88f4761483b29876bdc09ff34ca7f724db
+verify	Run actions/setup-python@v5	﻿2026-10-23T03:40:48.1172372Z ##[group]Run actions/setup-python@v5
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1173131Z with:
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1173605Z   python-version: 3.13
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1174115Z   check-latest: false
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1177928Z   token: ***
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1178421Z   update-environment: true
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1178976Z   allow-prereleases: false
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1179505Z   freethreaded: false
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.1180218Z ##[endgroup]
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.2552397Z ##[group]Installed versions
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.2675411Z (node:2370) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.2678129Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.2679689Z Successfully set up CPython (3.13.16)
+verify	Run actions/setup-python@v5	2026-10-23T03:40:48.2681317Z ##[endgroup]
+verify	Run actions/setup-node@v4	﻿2026-10-23T03:40:48.3189428Z ##[group]Run actions/setup-node@v4
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3190637Z with:
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3191466Z   node-version: 22
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3222895Z   always-auth: false
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3223913Z   check-latest: false
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3232443Z   token: ***
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3233407Z env:
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3234603Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3236332Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3237966Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3239522Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3240992Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3242665Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.3243956Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.5179753Z (node:2395) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.5184420Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.5186221Z ##[group]Environment details
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.5193908Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.9657012Z node: v22.23.3
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.9658116Z npm: 10.9.9
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.9658784Z yarn: 1.22.22
+verify	Run actions/setup-node@v4	2026-10-23T03:40:48.9660291Z ##[endgroup]
+verify	Run make setup build lint test bench	﻿2026-10-23T03:40:48.9843115Z ##[group]Run make setup build lint test bench
+verify	Run make setup build lint test bench	2026-10-23T03:40:48.9844855Z ^[[36;1mmake setup build lint test bench^[[0m
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0047768Z shell: /usr/bin/bash -e {0}
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0048999Z env:
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0050228Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0052484Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0054534Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0056321Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0058138Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0059998Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0061567Z ##[endgroup]
+verify	Run make setup build lint test bench	2026-10-23T03:40:49.0217455Z python3 -m venv .venv
+verify	Run make setup build lint test bench	2026-10-23T03:40:54.9370298Z .venv/bin/python -m pip install -e . -r requirements-dev.txt
+verify	Run make setup build lint test bench	2026-10-23T03:40:55.4327567Z Obtaining file:///home/runner/work/lean/lean
+verify	Run make setup build lint test bench	2026-10-23T03:40:55.4342452Z   Installing build dependencies: started
+verify	Run make setup build lint test bench	2026-10-23T03:40:56.7691340Z   Installing build dependencies: finished with status 'done'
+verify	Run make setup build lint test bench	2026-10-23T03:40:56.7696553Z   Checking if build backend supports build_editable: started
+verify	Run make setup build lint test bench	2026-10-23T03:40:57.2935552Z   Checking if build backend supports build_editable: finished with status 'done'
+verify	Run make setup build lint test bench	2026-10-23T03:40:57.2943207Z   Getting requirements to build editable: started
+verify	Run make setup build lint test bench	2026-10-23T03:40:57.6512772Z   Getting requirements to build editable: finished with status 'done'
+verify	Run make setup build lint test bench	2026-10-23T03:40:57.6519256Z   Preparing editable metadata (pyproject.toml): started
+verify	Run make setup build lint test bench	2026-10-23T03:40:57.8471435Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+verify	Run make setup build lint test bench	2026-10-23T03:40:57.8708139Z Collecting pip==26.2.2 (from -r requirements-dev.txt (line 1))
+verify	Run make setup build lint test bench	2026-10-23T03:40:58.0974966Z   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:40:58.4214456Z Collecting pytest==9.1.1 (from -r requirements-dev.txt (line 2))
+verify	Run make setup build lint test bench	2026-10-23T03:40:58.4928483Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.0872522Z Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 3))
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.1594552Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.2633441Z Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.3350310Z   Downloading pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.5607224Z Collecting tokenizers==0.23.3 (from lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.6324179Z   Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.7187064Z Collecting iniconfig>=1.0.1 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.7899624Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.8744585Z Collecting packaging>=22 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+verify	Run make setup build lint test bench	2026-10-23T03:40:59.9456848Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.0286345Z Collecting pluggy<2,>=1.5 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.0999938Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.1886218Z Collecting pygments>=2.7.2 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.2602461Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.3451807Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.4169302Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.5191968Z Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.5910639Z   Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.6768370Z Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.7492806Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.8391637Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:00.9105356Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.0058916Z Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.0799371Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.1788396Z Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.2506899Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.3405599Z Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.4119957Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.5061271Z Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.5782915Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.6940448Z Collecting huggingface-hub<3.0,>=0.16.4 (from tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.7656820Z   Downloading huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.8694379Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:01.9408935Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.0327010Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.1040588Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.1908690Z Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.2625419Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.3453279Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.4166426Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.5072554Z Collecting click<9.0.0,>=8.4.2 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.5782246Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.6719922Z Collecting filelock>=3.10.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.7433645Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.8311335Z Collecting fsspec>=2023.5.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:02.9024631Z   Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.0346622Z Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.1057808Z   Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.1888902Z Collecting httpx2<3,>=2.0.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.2597849Z   Downloading httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.3717847Z Collecting pyyaml>=5.1 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.4432550Z   Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.5388177Z Collecting tqdm>=4.42.1 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.6100107Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.7327067Z Collecting typing-extensions>=4.1.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.8035467Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.8918778Z Collecting anyio>=4.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:03.9628112Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.0447589Z Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.1159440Z   Downloading httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.2072481Z Collecting idna>=3.18 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.2785451Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.3619888Z Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.4332599Z   Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.5152339Z Collecting h11>=0.16 (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.5865368Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.6703682Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.7412543Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.8243920Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:04.8956673Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.0541387Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.1256018Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.2286846Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.2995685Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.4867855Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.5582293Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.6638343Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.7350608Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.8228967Z Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.8965722Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:05.9856757Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.0569628Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.1424190Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.2133996Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.2912329Z Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.5750535Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 8.5 MB/s  0:00:00
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.6464006Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.7317001Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.9180269Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 55.6 MB/s  0:00:00
+verify	Run make setup build lint test bench	2026-10-23T03:41:06.9896996Z Downloading pip_audit-2.9.0-py3-none-any.whl (58 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.0645949Z Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.0799119Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 245.2 MB/s  0:00:00
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.1533325Z Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.2293133Z Downloading huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.2354733Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 153.4 MB/s  0:00:00
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.3068330Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.3818088Z Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.4004301Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 243.0 MB/s  0:00:00
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.4717923Z Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.5452791Z Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.6185216Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.6923836Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.7656043Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.8383995Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.9115055Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:07.9846797Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.0578553Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.1315445Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.2050317Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.2819001Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.3577450Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.4327120Z Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.5068183Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.5808590Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.6552446Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.7291133Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.8032083Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.8776400Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:08.9518475Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.0255976Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.0334017Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 185.6 MB/s  0:00:00
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.1054030Z Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.1120651Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 801.6/801.6 kB 129.7 MB/s  0:00:00
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.1844922Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.2587894Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.3334553Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.4069426Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.4806672Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.5550172Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.6286291Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.7024095Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.7759213Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.8500088Z Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.9239631Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:09.9979518Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+verify	Run make setup build lint test bench	2026-10-23T03:41:10.1381489Z Building wheels for collected packages: lean-agent-filter
+verify	Run make setup build lint test bench	2026-10-23T03:41:10.1386989Z   Building editable for lean-agent-filter (pyproject.toml): started
+verify	Run make setup build lint test bench	2026-10-23T03:41:10.3511304Z   Building editable for lean-agent-filter (pyproject.toml): finished with status 'done'
+verify	Run make setup build lint test bench	2026-10-23T03:41:10.3516617Z   Created wheel for lean-agent-filter: filename=lean_agent_filter-0.1.0-0.editable-py3-none-any.whl size=1363 sha256=24b86cf6a20d24b2c4214854b527f545da344b02c2c358a572440a45e10c61d0
+verify	Run make setup build lint test bench	2026-10-23T03:41:10.3518245Z   Stored in directory: /tmp/pip-ephem-wheel-cache-3e0c2lt7/wheels/cf/f4/8e/e50f9a59720bfe97a24e43cdfa51cfad4b976bd81b19178fc8
+verify	Run make setup build lint test bench	2026-10-23T03:41:10.3532206Z Successfully built lean-agent-filter
+verify	Run make setup build lint test bench	2026-10-23T03:41:10.4422136Z Installing collected packages: sortedcontainers, boolean.py, urllib3, typing-extensions, truststore, tqdm, toml, ruff, pyyaml, pyparsing, pygments, pluggy, platformdirs, pip, packaging, packageurl-python, msgpack, mdurl, license-expression, iniconfig, idna, hf-xet, h11, fsspec, filelock, defusedxml, click, charset_normalizer, certifi, requests, pytest, py-serializable, pip-requirements-parser, pip-api, markdown-it-py, httpcore2, anyio, rich, httpx2, cyclonedx-python-lib, CacheControl, huggingface-hub, tokenizers, pip-audit, lean-agent-filter
+verify	Run make setup build lint test bench	2026-10-23T03:41:11.6664094Z   Attempting uninstall: pip
+verify	Run make setup build lint test bench	2026-10-23T03:41:11.6693312Z     Found existing installation: pip 26.2.1
+verify	Run make setup build lint test bench	2026-10-23T03:41:11.7027050Z     Uninstalling pip-26.2.1:
+verify	Run make setup build lint test bench	2026-10-23T03:41:11.7088711Z       Successfully uninstalled pip-26.2.1
+verify	Run make setup build lint test bench	2026-10-23T03:41:14.8826309Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:14.8874977Z Successfully installed CacheControl-0.14.4 anyio-4.15.1 boolean.py-5.0 certifi-2026.10.19 charset_normalizer-3.5.2 click-8.5.0 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 fsspec-2026.9.0 h11-0.16.0 hf-xet-1.7.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.2.0 idna-3.20 iniconfig-2.3.1 lean-agent-filter-0.1.0 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pluggy-1.7.0 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 pyyaml-6.0.3 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 tokenizers-0.23.3 toml-0.10.2 tqdm-4.70.1 truststore-0.10.5 typing-extensions-4.16.0 urllib3-2.8.0
+verify	Run make setup build lint test bench	2026-10-23T03:41:14.8881818Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:14.8882373Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+verify	Run make setup build lint test bench	2026-10-23T03:41:14.8883841Z [notice] To update, run: /home/runner/work/lean/lean/.venv/bin/python -m pip install --upgrade pip
+verify	Run make setup build lint test bench	2026-10-23T03:41:14.9935591Z npm --prefix apps/web ci
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6665692Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6666501Z added 29 packages, and audited 30 packages in 4s
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6666935Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6667165Z 6 packages are looking for funding
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6667585Z   run `npm fund` for details
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6676662Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6676991Z found 0 vulnerabilities
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.6909099Z npm --prefix apps/web run build
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.7898707Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.7899307Z > lean-field-notes@0.1.0 build
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.7899757Z > tsc --noEmit && vite build
+verify	Run make setup build lint test bench	2026-10-23T03:41:18.7899977Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:21.4746533Z ^[[36mvite v6.4.4 ^[[32mbuilding for production...^[[36m^[[39m
+verify	Run make setup build lint test bench	2026-10-23T03:41:21.6096096Z transforming...
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.3475637Z ^[[32m✓^[[39m 28 modules transformed.
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.4725838Z rendering chunks...
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.4790861Z computing gzip size...
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6370298Z ^[[2mdist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.41 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.29 kB^[[22m
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6373765Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-BMmrNLej.css  ^[[39m^[[1m^[[2m  9.68 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  2.68 kB^[[22m
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6376340Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-C3EG3Vnq.js   ^[[39m^[[1m^[[2m206.67 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 65.10 kB^[[22m
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6377532Z ^[[32m✓ built in 1.14s^[[39m
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6649557Z .venv/bin/ruff check src tests scripts
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6734803Z All checks passed!
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6740754Z .venv/bin/ruff format --check src tests scripts
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6818971Z 13 files already formatted
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.6824731Z npm --prefix apps/web run lint
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.7748379Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.7749009Z > lean-field-notes@0.1.0 lint
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.7749720Z > tsc --noEmit && prettier --check src
+verify	Run make setup build lint test bench	2026-10-23T03:41:22.7750085Z 
+verify	Run make setup build lint test bench	2026-10-23T03:41:24.3926311Z Checking formatting...
+verify	Run make setup build lint test bench	2026-10-23T03:41:24.7574791Z All matched files use Prettier code style!
+verify	Run make setup build lint test bench	2026-10-23T03:41:24.7905945Z apps/web/node_modules/.bin/prettier --check sdk/typescript
+verify	Run make setup build lint test bench	2026-10-23T03:41:24.8575316Z Checking formatting...
+verify	Run make setup build lint test bench	2026-10-23T03:41:24.9892835Z All matched files use Prettier code style!
+verify	Run make setup build lint test bench	2026-10-23T03:41:25.0098386Z .venv/bin/python -m pytest -q
+verify	Run make setup build lint test bench	2026-10-23T03:41:28.8103570Z ...........                                                              [100%]
+verify	Run make setup build lint test bench	2026-10-23T03:41:28.8104131Z 11 passed in 2.08s
+verify	Run make setup build lint test bench	2026-10-23T03:41:28.8525189Z .venv/bin/python scripts/bench.py
+verify	Run make setup build lint test bench	2026-10-23T03:41:30.1074371Z {"semantic_controls": {"dedupe_changes_majority": {"before": true, "after": false}, "truncate_loses_tail_assertion": true, "summary_loses_untagged_contract": true, "basis": "deterministic semantic controls, NOT observed model regressions"}, "cache": {"requests": 100, "tool_invocations": 1, "cache_hits": 99}, "archive_prompts_recounted": 144}
+verify	Run .venv/bin/pip-audit --skip-editable	﻿2026-10-23T03:41:30.1294910Z ##[group]Run .venv/bin/pip-audit --skip-editable
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1295337Z ^[[36;1m.venv/bin/pip-audit --skip-editable^[[0m
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1358302Z shell: /usr/bin/bash -e {0}
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1358556Z env:
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1358821Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1359274Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1359715Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1360107Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1360507Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1360900Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:30.1361226Z ##[endgroup]
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:32.5876084Z No known vulnerabilities found
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:32.5884905Z Name              Skip Reason
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:32.5885511Z ----------------- -------------------------------
+verify	Run .venv/bin/pip-audit --skip-editable	2026-10-23T03:41:32.5886405Z lean-agent-filter distribution marked as editable
+verify	Run npm --prefix apps/web audit --audit-level=high	﻿2026-10-23T03:41:32.6286930Z ##[group]Run npm --prefix apps/web audit --audit-level=high
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6287420Z ^[[36;1mnpm --prefix apps/web audit --audit-level=high^[[0m
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6347268Z shell: /usr/bin/bash -e {0}
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6347517Z env:
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6347777Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6348221Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6348646Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6349038Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6349426Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6349810Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:32.6350129Z ##[endgroup]
+verify	Run npm --prefix apps/web audit --audit-level=high	2026-10-23T03:41:33.0429326Z found 0 vulnerabilities
+verify	Run docker build -t lean:test .	﻿2026-10-23T03:41:33.0546569Z ##[group]Run docker build -t lean:test .
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0546916Z ^[[36;1mdocker build -t lean:test .^[[0m
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0608608Z shell: /usr/bin/bash -e {0}
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0608880Z env:
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0609143Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0609587Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0610025Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0610402Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0610777Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0611160Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.0611475Z ##[endgroup]
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8264158Z #0 building with "default" instance using docker driver
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8264652Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8265012Z #1 [internal] load build definition from Dockerfile
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8265687Z #1 transferring dockerfile: 575B done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8266240Z #1 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8266432Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8266846Z #2 [auth] library/python:pull token for registry-1.docker.io
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8267428Z #2 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8267575Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8267806Z #3 [auth] library/node:pull token for registry-1.docker.io
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8268141Z #3 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8268251Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.8268538Z #4 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.9624423Z #4 ...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.9624721Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.9625315Z #5 [internal] load metadata for docker.io/library/python:3.13-slim-bookworm
+verify	Run docker build -t lean:test .	2026-10-23T03:41:33.9625766Z #5 DONE 0.3s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0654953Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0659903Z #4 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0660679Z #4 DONE 0.4s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0660914Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0661179Z #6 [internal] load .dockerignore
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0662556Z #6 transferring context: 103B done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0663028Z #6 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0663229Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0664255Z #7 [stage-1 1/8] FROM docker.io/library/python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.0666904Z #7 resolve docker.io/library/python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1902540Z #7 ...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1904303Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1906372Z #8 [internal] load build context
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1911069Z #8 transferring context: 2.91MB 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1912014Z #8 DONE 0.1s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1912527Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1913735Z #7 [stage-1 1/8] FROM docker.io/library/python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1916010Z #7 sha256:514f59c1209a1df965b3efaf7cc2ede57d0cbf21868236eb5c056abcb714ad41 250B / 250B 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.1919110Z #7 sha256:70e1fe648bab453e8570a90bce0d674dfdfe9707d1b8e9e823a76d0e91d44278 3.34MB / 3.34MB 0.1s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.2929343Z #7 sha256:a6a788508a7265428337143dd4f37091356d9122dfa8c289c3242b1413916fa5 12.61MB / 12.61MB 0.1s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.2930767Z #7 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.2s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.2931552Z #7 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5078288Z #7 ...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5079072Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5080276Z #9 [web 1/7] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5082544Z #9 resolve docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5083943Z #9 sha256:9d58805976c12f11013d188c510c3520e3f061c1b311d4905afe5865aa496e63 449B / 449B 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5085397Z #9 sha256:696628b66b50a8ea2d374542f47107bc19fb3fd29825211da5c68b74a1b01555 1.71MB / 1.71MB 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5086532Z #9 sha256:b43ad0aedb87ae13912d52799d0d5552c146dced05197a7fa83b117cb3308906 3.31kB / 3.31kB 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5087701Z #9 sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba 49.89MB / 49.89MB 0.2s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.5088290Z #9 DONE 0.4s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.6579429Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:34.6580979Z #7 [stage-1 1/8] FROM docker.io/library/python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.0355416Z #7 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 0.8s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.0356214Z #7 DONE 1.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1463452Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1464875Z #7 [stage-1 1/8] FROM docker.io/library/python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1466035Z #7 extracting sha256:70e1fe648bab453e8570a90bce0d674dfdfe9707d1b8e9e823a76d0e91d44278 0.1s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1466560Z #7 DONE 1.1s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1466700Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1467246Z #9 [web 1/7] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1468111Z #9 extracting sha256:b43ad0aedb87ae13912d52799d0d5552c146dced05197a7fa83b117cb3308906 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.1468824Z #9 extracting sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.5477022Z #9 ...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.5477477Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.5478858Z #7 [stage-1 1/8] FROM docker.io/library/python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.5480214Z #7 extracting sha256:a6a788508a7265428337143dd4f37091356d9122dfa8c289c3242b1413916fa5 0.4s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.5481058Z #7 DONE 1.5s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.7088357Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.7089424Z #7 [stage-1 1/8] FROM docker.io/library/python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.7090407Z #7 extracting sha256:514f59c1209a1df965b3efaf7cc2ede57d0cbf21868236eb5c056abcb714ad41 done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.7091159Z #7 DONE 1.6s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.7091281Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:35.7091425Z #10 [stage-1 2/8] WORKDIR /app
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.0900638Z #10 DONE 0.5s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.0900979Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.0902237Z #9 [web 1/7] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1917424Z #9 extracting sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba 1.1s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1918787Z #9 extracting sha256:696628b66b50a8ea2d374542f47107bc19fb3fd29825211da5c68b74a1b01555 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1919959Z #9 extracting sha256:9d58805976c12f11013d188c510c3520e3f061c1b311d4905afe5865aa496e63 0.0s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1920904Z #9 DONE 1.5s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1921088Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1921270Z #11 [stage-1 3/8] COPY pyproject.toml ./
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1921882Z #11 DONE 0.1s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1922041Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1922197Z #12 [stage-1 4/8] COPY src ./src
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1922793Z #12 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1923031Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.1923282Z #13 [web 2/7] WORKDIR /web
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.3671205Z #13 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.3671804Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.3672436Z #14 [web 3/7] COPY apps/web/package*.json ./
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.3673121Z #14 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.3673333Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:36.3673529Z #15 [web 4/7] RUN npm ci
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.0426028Z #15 1.825 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.0427304Z #15 1.825 added 29 packages, and audited 30 packages in 2s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.0428398Z #15 1.825 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1960411Z #15 1.825 6 packages are looking for funding
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1962605Z #15 1.825   run `npm fund` for details
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1963090Z #15 1.826 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1963569Z #15 1.826 found 0 vulnerabilities
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1964482Z #15 1.827 npm notice
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1965186Z #15 1.827 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1966283Z #15 1.827 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1967253Z #15 1.827 npm notice To update run: npm install -g npm@12.2.1
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.1967837Z #15 1.827 npm notice
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.2225854Z #15 DONE 2.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.2226237Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.2227309Z #16 [stage-1 5/8] RUN pip install --no-cache-dir pip==26.2.2 . && useradd --uid 10001 --create-home app
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.2228345Z #16 1.652 Processing ./.
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.2236245Z #16 1.654   Installing build dependencies: started
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.4269562Z #16 ...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.4269784Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.4269963Z #17 [web 5/7] COPY apps/web/ ./
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.4270287Z #17 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.4270423Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.4270552Z #18 [web 6/7] COPY sdk /sdk
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.4270852Z #18 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.5254193Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.5255246Z #19 [web 7/7] RUN npm run build
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.5255812Z #19 0.249 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.5256397Z #19 0.249 > lean-field-notes@0.1.0 build
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.5257698Z #19 0.249 > tsc --noEmit && vite build
+verify	Run docker build -t lean:test .	2026-10-23T03:41:38.5258194Z #19 0.249 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:40.4862761Z #19 2.210 vite v6.4.4 building for production...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:40.6929700Z #19 2.290 transforming...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.5382944Z #19 3.148 ✓ 28 modules transformed.
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6412083Z #19 3.291 rendering chunks...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6413080Z #19 3.298 computing gzip size...
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6414525Z #19 3.306 dist/index.html                   0.41 kB │ gzip:  0.29 kB
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6415644Z #19 3.306 dist/assets/index-BMmrNLej.css    9.68 kB │ gzip:  2.68 kB
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6416638Z #19 3.306 dist/assets/index-C3EG3Vnq.js   206.67 kB │ gzip: 65.10 kB
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6417443Z #19 3.306 ✓ built in 1.07s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6418329Z #19 DONE 3.4s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6418572Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6419400Z #16 [stage-1 5/8] RUN pip install --no-cache-dir pip==26.2.2 . && useradd --uid 10001 --create-home app
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6421058Z #16 3.361   Installing build dependencies: finished with status 'done'
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6422052Z #16 3.362   Getting requirements to build wheel: started
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6422872Z #16 3.951   Getting requirements to build wheel: finished with status 'done'
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6423699Z #16 3.952   Preparing metadata (pyproject.toml): started
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6424667Z #16 4.182   Preparing metadata (pyproject.toml): finished with status 'done'
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6425814Z #16 4.185 Requirement already satisfied: pip==26.2.2 in /usr/local/lib/python3.13/site-packages (26.2.2)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6426946Z #16 4.500 Collecting tokenizers==0.23.3 (from lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6427787Z #16 4.808   Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6428609Z #16 4.858 Collecting huggingface-hub<3.0,>=0.16.4 (from tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6429287Z #16 4.934   Downloading huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6430056Z #16 4.988 Collecting click<9.0.0,>=8.4.2 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6430734Z #16 5.062   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6431656Z #16 5.092 Collecting filelock>=3.10.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6432964Z #16 5.167   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6434295Z #16 5.192 Collecting fsspec>=2023.5.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6435732Z #16 5.266   Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6437681Z #16 5.345 Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6439220Z #16 5.420   Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.6440792Z #16 5.448 Collecting httpx2<3,>=2.0.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.8117117Z #16 5.523   Downloading httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.8118069Z #16 5.544 Collecting packaging>=20.9 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.8118814Z #16 5.619   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.9188920Z #16 5.652 Collecting pyyaml>=5.1 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:41.9190925Z #16 5.726   Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.1152545Z #16 5.748 Collecting tqdm>=4.42.1 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.1153811Z #16 5.822   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.1155239Z #16 5.922 Collecting typing-extensions>=4.1.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.2779040Z #16 5.997   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.2780742Z #16 6.011 Collecting anyio>=4.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.2782265Z #16 6.085   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.3807470Z #16 6.094 Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.3808687Z #16 6.168   Downloading httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.3809677Z #16 6.188 Collecting idna>=3.18 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.5378743Z #16 6.262   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.5380552Z #16 6.271 Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.5382226Z #16 6.345   Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.7027809Z #16 6.354 Collecting h11>=0.16 (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.7029431Z #16 6.427   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:42.7031136Z #16 6.510 Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.2220217Z #16 6.872    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 12.4 MB/s  0:00:00
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.2220969Z #16 6.946 Downloading huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.2222049Z #16 6.955    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 100.7 MB/s  0:00:00
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.2222972Z #16 7.029 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.3741779Z #16 7.104 Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.5221252Z #16 7.181    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 52.7 MB/s  0:00:00
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.5222335Z #16 7.256 Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.5223171Z #16 7.329 Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.6707531Z #16 7.405 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.6708455Z #16 7.478 Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.8189746Z #16 7.552 Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.8190734Z #16 7.626 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.9670851Z #16 7.700 Downloading idna-3.20-py3-none-any.whl (69 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:43.9672338Z #16 7.774 Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.1191257Z #16 7.849 Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.1194329Z #16 7.853    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 801.6/801.6 kB 476.6 MB/s  0:00:00
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.1195898Z #16 7.926 Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.2675538Z #16 8.001 Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.2676873Z #16 8.075 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.4728547Z #16 8.129 Building wheels for collected packages: lean-agent-filter
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.4729438Z #16 8.130   Building wheel for lean-agent-filter (pyproject.toml): started
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.5384778Z #16 8.346   Building wheel for lean-agent-filter (pyproject.toml): finished with status 'done'
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.7362322Z #16 8.346   Created wheel for lean-agent-filter: filename=lean_agent_filter-0.1.0-py3-none-any.whl size=8655 sha256=ff3077b52ae42020e002ea14bd451daa06a1bc38a289edaa37f3dd196eb58640
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.7364730Z #16 8.347   Stored in directory: /tmp/pip-ephem-wheel-cache-fv0bsn47/wheels/19/62/e5/caf0138816cbbc0c92b8fb19626cf9ac282f22194a65231821
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.7366000Z #16 8.348 Successfully built lean-agent-filter
+verify	Run docker build -t lean:test .	2026-10-23T03:41:44.7368062Z #16 8.393 Installing collected packages: typing-extensions, truststore, tqdm, pyyaml, packaging, idna, hf-xet, h11, fsspec, filelock, click, httpcore2, anyio, httpx2, huggingface-hub, tokenizers, lean-agent-filter
+verify	Run docker build -t lean:test .	2026-10-23T03:41:45.9476641Z #16 9.755 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.1013568Z #16 9.758 Successfully installed anyio-4.15.1 click-8.5.0 filelock-4.2.4 fsspec-2026.9.0 h11-0.16.0 hf-xet-1.7.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.2.0 idna-3.20 lean-agent-filter-0.1.0 packaging-26.3 pyyaml-6.0.3 tokenizers-0.23.3 tqdm-4.70.1 truststore-0.10.5 typing-extensions-4.16.0
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.1018427Z #16 9.758 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.1523251Z #16 DONE 10.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3785926Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3786703Z #20 [stage-1 6/8] COPY assets ./assets
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3787224Z #20 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3787430Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3787981Z #21 [stage-1 7/8] COPY docs/results/evaluation.json ./docs/results/evaluation.json
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3788678Z #21 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3788869Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3789261Z #22 [stage-1 8/8] COPY --from=web /web/dist ./apps/web/dist
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3789807Z #22 DONE 0.0s
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3789998Z 
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3790170Z #23 exporting to image
+verify	Run docker build -t lean:test .	2026-10-23T03:41:46.3790555Z #23 exporting layers
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.1131563Z #23 exporting layers 1.9s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.3249034Z #23 exporting manifest sha256:9668badf6dd4ec6ca0db559074c876118b27bc3f631a8693c25a2c76516ff4d5 done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.3251202Z #23 exporting config sha256:682409d231e820b5dbaeb0716d0abb3109817f6df8ad726a3bf8217dbf0590ba done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.3253459Z #23 exporting attestation manifest sha256:4c3fa1087e12b0c1f0da6750f59f29ce09c474c029f8a889c89cdf086257df36 done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.3255286Z #23 exporting manifest list sha256:3a59e108247890ea913b24350b12e32d08bc692aa74cdc3660111f408bf9bb5c done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.3256535Z #23 naming to docker.io/library/lean:test done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.3257797Z #23 unpacking to docker.io/library/lean:test
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.6308590Z #23 unpacking to docker.io/library/lean:test 0.5s done
+verify	Run docker build -t lean:test .	2026-10-23T03:41:48.7074314Z #23 DONE 2.4s
+verify	Run .venv/bin/python scripts/container_smoke.py	﻿2026-10-23T03:41:48.7211107Z ##[group]Run .venv/bin/python scripts/container_smoke.py
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7211559Z ^[[36;1m.venv/bin/python scripts/container_smoke.py^[[0m
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7271425Z shell: /usr/bin/bash -e {0}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7271887Z env:
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7272164Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7272606Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7273036Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7273418Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7273805Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7274183Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.7274509Z ##[endgroup]
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:41:48.8749299Z 231c56f5d6c8bafb8384a5fab4bb8814672042590213f0a979e2c319ef435193
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.0336330Z lean-ci-smoke
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5659586Z {"event": "ready", "url": "http://0.0.0.0:8092"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5660380Z {"event": "http", "status": 200, "operation": "read"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5660796Z {"event": "http", "status": 200, "operation": "read"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5661195Z {"event": "http", "status": 200, "operation": "read"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5661575Z {"event": "http", "status": 401, "operation": "read"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5662255Z {"event": "http", "status": 200, "operation": "read"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5662638Z {"event": "http", "status": 200, "operation": "write"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5663051Z {"event": "ready", "url": "http://0.0.0.0:8092"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.5663505Z {"event": "http", "status": 200, "operation": "read"}
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.6952931Z lean-ci-smoke
+verify	Run .venv/bin/python scripts/container_smoke.py	2026-10-23T03:42:00.6976214Z {"image": "pass", "uid": "10001", "static_asset": true, "auth": true, "live_cache_hits": 1, "recorded_report_restart_equal": true}
+verify	Post Run actions/setup-node@v4	﻿2026-10-23T03:42:00.7183891Z Post job cleanup.
+verify	Post Run actions/setup-node@v4	2026-10-23T03:42:00.8500025Z (node:3521) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-node@v4	2026-10-23T03:42:00.8501426Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/setup-python@v5	﻿2026-10-23T03:42:00.8673244Z Post job cleanup.
+verify	Post Run actions/setup-python@v5	2026-10-23T03:42:00.9962775Z (node:3530) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-python@v5	2026-10-23T03:42:00.9964627Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/checkout@v4	﻿2026-10-23T03:42:01.0137126Z Post job cleanup.
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1006974Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1052493Z git version 2.55.0
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1093479Z Temporarily overriding HOME='/home/runner/work/_temp/704fe33f-e090-4cc6-a0e2-8ace4b6edb62' before making global git config changes
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1095486Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1099554Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/lean/lean
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1145293Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1182968Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1489935Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1531087Z http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1535927Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1576742Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1886576Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@v4	2026-10-23T03:42:01.1941240Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-10-23T03:42:01.2386408Z Cleaning up orphan processes
+verify	Complete job	2026-10-23T03:42:01.2932336Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

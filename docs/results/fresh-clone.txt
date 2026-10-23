@@ -1,0 +1,196 @@
+python3 -m venv .venv
+.venv/bin/python -m pip install -e . -r requirements-dev.txt
+Obtaining file:///private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/lean-clone-4ev7vvby/repo
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting pip==26.2.2 (from -r requirements-dev.txt (line 1))
+  Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting pytest==9.1.1 (from -r requirements-dev.txt (line 2))
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 3))
+  Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl.metadata (20 kB)
+Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 4))
+  Using cached pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+Collecting iniconfig>=1.0.1 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=22 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting tokenizers==0.23.3 (from lean-agent-filter==0.1.0)
+  Using cached tokenizers-0.23.3-cp310-abi3-macosx_11_0_arm64.whl.metadata (9.8 kB)
+Collecting huggingface-hub<3.0,>=0.16.4 (from tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached msgpack-1.2.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (8.3 kB)
+Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting click<9.0.0,>=8.4.2 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached hf_xet-1.7.0-cp38-abi3-macosx_11_0_arm64.whl.metadata (4.9 kB)
+Collecting httpx2<3,>=2.0.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+Collecting pyyaml>=5.1 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting tqdm>=4.42.1 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting typing-extensions>=4.1.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting anyio>=4.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+Collecting h11>=0.16 (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers==0.23.3->lean-agent-filter==0.1.0)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl (9.3 MB)
+Using cached pip_audit-2.9.0-py3-none-any.whl (58 kB)
+Using cached tokenizers-0.23.3-cp310-abi3-macosx_11_0_arm64.whl (3.1 MB)
+Using cached cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+Using cached cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pip_api-0.0.35-py3-none-any.whl (123 kB)
+Using cached pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Using cached certifi-2026.10.19-py3-none-any.whl (136 kB)
+Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl (366 kB)
+Using cached filelock-4.2.4-py3-none-any.whl (162 kB)
+Using cached huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached license_expression-30.4.4-py3-none-any.whl (120 kB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached msgpack-1.2.3-cp313-cp313-macosx_11_0_arm64.whl (89 kB)
+Using cached packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+Using cached py_serializable-2.1.0-py3-none-any.whl (23 kB)
+Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached boolean_py-5.0-py3-none-any.whl (26 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached hf_xet-1.7.0-cp38-abi3-macosx_11_0_arm64.whl (3.6 MB)
+Using cached httpx2-2.16.0-py3-none-any.whl (97 kB)
+Using cached httpcore2-2.16.0-py3-none-any.whl (85 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl (173 kB)
+Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached truststore-0.10.5-py3-none-any.whl (19 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Building wheels for collected packages: lean-agent-filter
+  Building editable for lean-agent-filter (pyproject.toml): started
+  Building editable for lean-agent-filter (pyproject.toml): finished with status 'done'
+  Created wheel for lean-agent-filter: filename=lean_agent_filter-0.1.0-0.editable-py3-none-any.whl size=1417 sha256=94238cbfe77f2bf27a5b2288ba829e3a291980b94e16fdf45ab85abf367b0c71
+  Stored in directory: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/pip-ephem-wheel-cache-3oyzzdut/wheels/cf/0f/b4/97b4344a4ec5d0134696ecbb5c393d0c5c78d9c9f245ca28a0
+Successfully built lean-agent-filter
+Installing collected packages: sortedcontainers, boolean.py, urllib3, typing-extensions, truststore, tqdm, toml, ruff, pyyaml, pyparsing, pygments, pluggy, platformdirs, pip, packaging, packageurl-python, msgpack, mdurl, license-expression, iniconfig, idna, hf-xet, h11, fsspec, filelock, defusedxml, click, charset_normalizer, certifi, requests, pytest, py-serializable, pip-requirements-parser, pip-api, markdown-it-py, httpcore2, anyio, rich, httpx2, cyclonedx-python-lib, CacheControl, huggingface-hub, tokenizers, pip-audit, lean-agent-filter
+  Attempting uninstall: pip
+    Found existing installation: pip 25.0
+    Uninstalling pip-25.0:
+      Successfully uninstalled pip-25.0
+Successfully installed CacheControl-0.14.4 anyio-4.15.1 boolean.py-5.0 certifi-2026.10.19 charset_normalizer-3.5.2 click-8.5.0 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 fsspec-2026.9.0 h11-0.16.0 hf-xet-1.7.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.2.0 idna-3.20 iniconfig-2.3.1 lean-agent-filter-0.1.0 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pluggy-1.7.0 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 pyyaml-6.0.3 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 tokenizers-0.23.3 toml-0.10.2 tqdm-4.70.1 truststore-0.10.5 typing-extensions-4.16.0 urllib3-2.8.0
+npm --prefix apps/web ci
+
+added 28 packages, and audited 29 packages in 1s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm --prefix apps/web run build
+
+> lean-field-notes@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-BMmrNLej.css    9.68 kB │ gzip:  2.68 kB
+dist/assets/index-C3EG3Vnq.js   206.67 kB │ gzip: 65.10 kB
+✓ built in 441ms
+.venv/bin/ruff check src tests scripts
+All checks passed!
+.venv/bin/ruff format --check src tests scripts
+13 files already formatted
+npm --prefix apps/web run lint
+
+> lean-field-notes@0.1.0 lint
+> tsc --noEmit && prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+apps/web/node_modules/.bin/prettier --check sdk/typescript
+Checking formatting...
+All matched files use Prettier code style!
+.venv/bin/python -m pytest -q
+...........                                                              [100%]
+11 passed in 2.22s
+.venv/bin/python scripts/bench.py
+{"semantic_controls": {"dedupe_changes_majority": {"before": true, "after": false}, "truncate_loses_tail_assertion": true, "summary_loses_untagged_contract": true, "basis": "deterministic semantic controls, NOT observed model regressions"}, "cache": {"requests": 100, "tool_invocations": 1, "cache_hits": 99}, "archive_prompts_recounted": 144}
