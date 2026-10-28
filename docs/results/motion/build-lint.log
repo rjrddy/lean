@@ -1,6 +1,6 @@
-src/motion.ts 66ms
-src/main.tsx 46ms (unchanged)
-src/style.css 43ms (unchanged)
+src/motion.ts 77ms
+src/main.tsx 50ms (unchanged)
+src/style.css 54ms (unchanged)
 
 > lean-field-notes@0.1.0 lint
 > tsc --noEmit && prettier --check src
@@ -18,5 +18,5 @@ rendering chunks...
 computing gzip size...
 dist/index.html                   0.41 kB │ gzip:  0.29 kB
 dist/assets/index-C41wRBj_.css    9.82 kB │ gzip:  2.75 kB
-dist/assets/index-C-uwCesQ.js   210.33 kB │ gzip: 66.46 kB
-✓ built in 513ms
+dist/assets/index-DTtfaKwV.js   210.34 kB │ gzip: 66.48 kB
+✓ built in 597ms

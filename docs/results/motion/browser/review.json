@@ -66,6 +66,6 @@
       "cache_hits": 1
     }
   ],
-  "elapsed_s": 2.369269917020574,
+  "elapsed_s": 3.353950334014371,
   "model_basis": "retained actual model evaluation, not live inference"
 }
