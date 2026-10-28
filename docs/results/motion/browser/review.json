@@ -1,0 +1,71 @@
+{
+  "responsive_widths": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "page_errors": [],
+  "network_failure_recovery": true,
+  "keyboard_focus": true,
+  "live_filter_receipts": [
+    {
+      "policy": "baseline",
+      "before_tokens": 457,
+      "after_tokens": 457,
+      "tool_invocations": 2,
+      "cache_hits": 0
+    },
+    {
+      "policy": "dedupe",
+      "before_tokens": 450,
+      "after_tokens": 99,
+      "tool_invocations": 2,
+      "cache_hits": 0
+    },
+    {
+      "policy": "summary",
+      "before_tokens": 455,
+      "after_tokens": 86,
+      "tool_invocations": 2,
+      "cache_hits": 0
+    },
+    {
+      "policy": "trim256",
+      "before_tokens": 465,
+      "after_tokens": 254,
+      "tool_invocations": 2,
+      "cache_hits": 0
+    },
+    {
+      "policy": "trim64",
+      "before_tokens": 449,
+      "after_tokens": 62,
+      "tool_invocations": 2,
+      "cache_hits": 0
+    },
+    {
+      "policy": "balanced",
+      "before_tokens": 459,
+      "after_tokens": 90,
+      "tool_invocations": 1,
+      "cache_hits": 1
+    },
+    {
+      "policy": "summary",
+      "before_tokens": 455,
+      "after_tokens": 86,
+      "tool_invocations": 2,
+      "cache_hits": 0
+    },
+    {
+      "policy": "balanced",
+      "before_tokens": 459,
+      "after_tokens": 90,
+      "tool_invocations": 1,
+      "cache_hits": 1
+    }
+  ],
+  "elapsed_s": 2.369269917020574,
+  "model_basis": "retained actual model evaluation, not live inference"
+}

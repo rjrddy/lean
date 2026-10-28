@@ -1,0 +1,22 @@
+src/motion.ts 66ms
+src/main.tsx 46ms (unchanged)
+src/style.css 43ms (unchanged)
+
+> lean-field-notes@0.1.0 lint
+> tsc --noEmit && prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> lean-field-notes@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-C41wRBj_.css    9.82 kB │ gzip:  2.75 kB
+dist/assets/index-C-uwCesQ.js   210.33 kB │ gzip: 66.46 kB
+✓ built in 513ms

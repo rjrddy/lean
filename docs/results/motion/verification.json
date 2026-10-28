@@ -1,0 +1,17 @@
+{
+  "project": "lean",
+  "motion_profile": "Typesetter proof registration",
+  "source_sha256": {
+    "apps/web/src/motion.ts": "3de01ffde537420804805be5d8dd0e5f1f13edf8669e9d27b3b0e607557cd6d3",
+    "apps/web/src/style.css": "31acc9af9231b9b48444c7539ff761f4fb07f3be80fd465b5c2c067d0fae02fa"
+  },
+  "frontend_build_lint": "passed",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "passed",
+  "showcase_contract": "not applicable",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}
